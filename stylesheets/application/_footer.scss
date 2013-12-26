@@ -1,0 +1,26 @@
+div.footer-spacer {
+  background: $white;
+  height: 155px;
+}
+
+footer {
+  background: $gray;
+  section.footer {
+    @include outer-container;
+    @include pad(20px 40px);
+
+    article.openingsuren {
+      @include span-columns(8);
+
+      p {
+        color: $white;
+      }
+
+      ul.contact {
+        @include shift(2);
+        @include span-columns(2);
+      }
+    }
+  }
+}
+

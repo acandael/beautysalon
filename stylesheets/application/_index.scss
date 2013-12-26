@@ -1,0 +1,41 @@
+section.content {
+  @include outer-container;
+  margin-top: 30px;
+  article.banner {
+  }
+
+  article.section {
+    @include outer-container;
+    @include span-columns(4);
+    margin-top: em(50); 
+    header {
+      @include row();
+      margin-bottom: 2.0em;
+      text-align: center;
+
+      h1 {
+        color: $black;
+        font-size: em(18);
+      }
+    }
+    p {
+      color: lighten($black, 10);
+    }
+
+    a{
+      float: right;
+      margin-right: em(30);
+      font-weight: 700;
+
+      &:hover {
+        background: $pink;
+        color: $white;
+        @include pad( default 1em );
+        border-radius: 10px;
+      }
+    }
+    ul {
+      list-style-image:url('../images/bullet.png');
+    }
+  }
+}
