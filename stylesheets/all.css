@@ -902,8 +902,9 @@ body {
 h1 {
   margin: 0;
   font-family: "Century Gothic", sans-serif;
-  color: #030303;
-  font-size: 1.3125em; }
+  color: #505050;
+  font-size: 1.125em;
+  font-weight: 600; }
 
 p {
   line-height: 1.5em;
@@ -2266,11 +2267,12 @@ header.top-bar {
     font-size: 1.2em; }
     header.top-bar span.graphic:hover {
       opacity: 1.0; }
+  header.top-bar a.phone {
+    color: #030303; }
   header.top-bar nav {
     float: right; }
     header.top-bar nav ul {
       font-family: "Century Gothic", sans-serif;
-      font-weight: 700;
       margin: 60px 0 0 0; }
       header.top-bar nav ul li {
         padding: 2.35765% 1.5em;
@@ -2280,11 +2282,12 @@ header.top-bar {
         text-align: center; }
       header.top-bar nav ul a {
         color: #030303;
-        padding: 0.6em; }
+        padding: 0.6em;
+        border-bottom: 3px solid transparent;
+        font-size: 1.125em; }
         header.top-bar nav ul a:hover {
-          background-color: #f3a9bb;
-          color: white;
-          border-radius: 10px; }
+          border-bottom: 3px solid #f3a9bb;
+          color: #f3a9bb; }
 
 div.footer-spacer {
   background: white;
@@ -2341,6 +2344,8 @@ section.content {
     display: table; }
   section.content:after {
     clear: both; }
+  section.content article.banner {
+    margin-top: 30px; }
   section.content article.section {
     *zoom: 1;
     max-width: 68em;
@@ -2350,6 +2355,7 @@ section.content {
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
+    padding: 0 1em;
     position: relative;
     margin-top: 3.125em;
     margin-bottom: 0;
@@ -2385,4 +2391,5 @@ section.content {
         border-bottom: 3px solid #f3a9bb;
         color: #f3a9bb; }
     section.content article.section ul {
-      list-style-image: url("../images/bullet.png"); }
+      list-style-image: url("../images/bullet.png");
+      padding-left: 1em; }

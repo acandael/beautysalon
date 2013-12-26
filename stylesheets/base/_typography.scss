@@ -9,8 +9,9 @@ body {
 h1 {
   margin: 0;
   font-family: $sans-serif;
-  color: $black;
-  font-size: em(21);
+  color: lighten($black, 30);
+  font-size: em(18);
+  font-weight: 600;
 }
 
 p {

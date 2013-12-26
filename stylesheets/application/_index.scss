@@ -2,20 +2,24 @@ section.content {
   @include outer-container;
   margin-top: 30px;
   article.banner {
+    margin-top: 30px;
   }
 
   article.section {
     @include outer-container;
     @include span-columns(4);
+    @include pad(0 1em);
     position: relative;
     margin-top: em(50);
     margin-bottom: 0;
     height: 250px;
+
     header {
       @include row();
       margin-bottom: 2.0em;
       text-align: center;
     }
+
     p {
       color: lighten($black, 10);
     }
@@ -36,6 +40,7 @@ section.content {
     }
     ul {
       list-style-image:url('../images/bullet.png');
+      padding-left: 1em;
     }
   }
 }
