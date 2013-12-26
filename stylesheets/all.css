@@ -901,11 +901,13 @@ body {
 
 h1 {
   margin: 0;
-  font-family: "Century Gothic", sans-serif; }
+  font-family: "Century Gothic", sans-serif;
+  color: #030303;
+  font-size: 1.3125em; }
 
 p {
   line-height: 1.5em;
-  margin: 0 0 2.0em 0; }
+  margin: 0 0 1.2em 0; }
 
 a {
   text-decoration: none;
@@ -2295,29 +2297,38 @@ footer {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 40px; }
+    padding: 20px; }
     footer section.footer:before, footer section.footer:after {
       content: " ";
       display: table; }
     footer section.footer:after {
       clear: both; }
-    footer section.footer article.openingsuren {
+    footer section.footer ul.contact {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 65.88078%; }
-      footer section.footer article.openingsuren:last-child {
+      width: 31.76157%;
+      margin-right: 0px; }
+      footer section.footer ul.contact:last-child {
         margin-right: 0; }
-      footer section.footer article.openingsuren p {
+      footer section.footer ul.contact li {
         color: white; }
-      footer section.footer article.openingsuren ul.contact {
-        margin-left: 17.05961%;
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 14.70196%; }
-        footer section.footer article.openingsuren ul.contact:last-child {
-          margin-right: 0; }
+        footer section.footer ul.contact li a {
+          color: white; }
+          footer section.footer ul.contact li a:hover {
+            color: #f3a9bb; }
+  footer h1 {
+    color: white;
+    margin-bottom: 0.125em; }
+  footer article.openingsuren {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    footer article.openingsuren:last-child {
+      margin-right: 0; }
+    footer article.openingsuren p {
+      color: white; }
 
 section.content {
   *zoom: 1;
@@ -2339,7 +2350,10 @@ section.content {
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    margin-top: 3.125em; }
+    position: relative;
+    margin-top: 3.125em;
+    margin-bottom: 0;
+    height: 250px; }
     section.content article.section:before, section.content article.section:after {
       content: " ";
       display: table; }
@@ -2357,19 +2371,18 @@ section.content {
         display: table; }
       section.content article.section header:after {
         clear: both; }
-      section.content article.section header h1 {
-        color: #030303;
-        font-size: 1.125em; }
     section.content article.section p {
       color: #1c1c1c; }
     section.content article.section a {
-      float: right;
       margin-right: 1.875em;
-      font-weight: 700; }
+      padding: 0.4em;
+      font-weight: 700;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      border-bottom: 3px solid transparent; }
       section.content article.section a:hover {
-        background: #f3a9bb;
-        color: white;
-        padding: 2.35765% 1em;
-        border-radius: 10px; }
+        border-bottom: 3px solid #f3a9bb;
+        color: #f3a9bb; }
     section.content article.section ul {
       list-style-image: url("../images/bullet.png"); }

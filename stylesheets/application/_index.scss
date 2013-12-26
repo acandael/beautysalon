@@ -7,31 +7,31 @@ section.content {
   article.section {
     @include outer-container;
     @include span-columns(4);
-    margin-top: em(50); 
+    position: relative;
+    margin-top: em(50);
+    margin-bottom: 0;
+    height: 250px;
     header {
       @include row();
       margin-bottom: 2.0em;
       text-align: center;
-
-      h1 {
-        color: $black;
-        font-size: em(18);
-      }
     }
     p {
       color: lighten($black, 10);
     }
 
     a{
-      float: right;
       margin-right: em(30);
+      @include pad(.4em);
       font-weight: 700;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      border-bottom: 3px solid transparent;
 
       &:hover {
-        background: $pink;
-        color: $white;
-        @include pad( default 1em );
-        border-radius: 10px;
+        border-bottom: 3px solid $pink;
+        color: $pink;
       }
     }
     ul {

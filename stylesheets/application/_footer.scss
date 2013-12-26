@@ -7,20 +7,36 @@ footer {
   background: $gray;
   section.footer {
     @include outer-container;
-    @include pad(20px 40px);
+    @include pad(20px);
 
+    ul.contact {
+      //@include shift(1);
+      @include span-columns(4);
+      margin-right: 0px;
+      li {
+        color: $white;
+
+        a {
+          color: $white;
+
+          &:hover {
+            color: $pink;
+          }
+        }
+        }
+      }
+    }
+    
+    h1 {
+      color: $white;
+      margin-bottom: em(2);
+    }
     article.openingsuren {
       @include span-columns(8);
-
       p {
         color: $white;
       }
-
-      ul.contact {
-        @include shift(2);
-        @include span-columns(2);
-      }
     }
   }
-}
+
 
