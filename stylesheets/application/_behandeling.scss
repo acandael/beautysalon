@@ -1,0 +1,46 @@
+section.behandeling.content {
+  @include outer-container;
+  margin-top: em(100);
+  
+  article {
+    @include span-columns(7);
+    @include pad(0px 0px 0px 20px);
+    img {
+      @include pad(20px 0px);
+    }
+    
+    ul {
+      @include pad(0px 0px 20px 0px);
+    }
+  }
+
+  aside {
+    @include span-columns(4);
+    @include shift(1);
+    @include pad(1.5em);
+
+    background: $pink;
+    border-radius: 10px;
+    border: 2px solid darken($pink, 5);
+    @include linear-gradient($pink, darken($pink, 5));
+
+    h2 {
+      color: $white;
+      text-shadow: 1px 1px 0 darken($pink, 10);
+      margin-bottom: .4em;
+      text-align: center;
+    }
+
+    p {
+      color: $white;
+    }
+
+    div {
+      margin: 0 auto;
+      width: 100px;
+      a.button {
+      @include button(shiny, $gray);
+     }
+    }
+  }
+}

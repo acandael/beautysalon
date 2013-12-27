@@ -48,6 +48,10 @@ header.top-bar {
         @include pad(0.6em);
         border-bottom: 3px solid transparent;
         font-size: em(18);
+        &.active {
+          border-bottom: 3px solid $pink;
+          color: $pink;
+        }
         &:hover {
           border-bottom: 3px solid $pink;
           color: $pink;
