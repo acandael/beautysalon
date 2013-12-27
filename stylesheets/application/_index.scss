@@ -3,7 +3,11 @@ section.content {
   margin-top: 30px;
   article.banner {
     margin-top: 30px;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px)     {
+      display: none;
+    }
   }
+
 
   article.section {
     @include outer-container;
