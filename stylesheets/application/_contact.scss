@@ -1,10 +1,27 @@
 section.contact.content {
   @include outer-container;
   margin-top: em(100);
+  @include media($mobile) {
+    margin-top: 0px;
+  }
 
     article {
       @include span-columns(7);
       @include pad(0px 0px 0px 20px);
+      @include media($mobile) {
+        position: static;
+        padding: .5em 1.5em;
+        margin-top: em(20);
+        margin-bottom: em(20);
+        border-bottom: 2px solid lighten($gray, 30);
+        @include fill-parent;
+        header {
+          margin-bottom: em(20);
+        }
+        p {
+          font-size: em(14);
+        }
+      }
     }
 
     form {
@@ -40,6 +57,13 @@ section.contact.content {
   aside {
     @include span-columns(3);
     @include shift(2);
+
+    @include media($mobile) {
+        position: static;
+        padding: .5em 1.5em;
+        @include fill-parent;
+        @include shift(0);
+    }
 
     .graphic {
       color: $pink;
