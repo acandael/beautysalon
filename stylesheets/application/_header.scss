@@ -13,6 +13,10 @@ header.top-bar {
    
   }
 
+  @include media($tablet) {
+    height: auto;
+  }
+
   div.logo {
     float: left;
 
@@ -23,6 +27,13 @@ header.top-bar {
 
     @include media($mobile) {
       display: none;
+    }
+
+    @include media($tablet) {
+      img {
+        width: 80%;
+        height: auto;
+      }
     }
   }
 
@@ -48,6 +59,16 @@ header.top-bar {
         font-size: em(12);
       }
     }
+
+    @include media($tablet) {
+      a.phone {
+        font-size: em(12);
+      }
+
+      i {
+        font-size: em(12);
+      }
+    }
   }
 
   i#nav-dropdown {
@@ -68,6 +89,12 @@ header.top-bar {
 nav {
     float: right;
 
+    @include media($tablet) {
+
+      margin-top: 0;
+
+    }
+
     @include media($mobile) {
       @include fill-parent;
       padding-top: 0;
@@ -85,6 +112,10 @@ nav {
         border-radius: 6px;
       }
 
+      @include media($tablet) {
+        margin-top: 1em;
+      }
+
       li {
         @include pad( default 1.5em );
         @include inline-block;
@@ -94,6 +125,11 @@ nav {
 
         &.active a {
             border-bottom: 3px solid $pink;
+        }
+
+        @include media($tablet) {
+          font-size: em(14);
+          line-height: em(20);
         }
 
         @include media($mobile){

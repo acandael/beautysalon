@@ -5,6 +5,11 @@ div.footer-spacer {
   @include media($mobile) {
     height: auto;
   }
+
+  @include media($tablet) {
+    height: 100px;
+  }
+  
 }
 
 footer {
@@ -25,6 +30,10 @@ footer {
         @include fill-parent;
       }
 
+      @include media($tablet) {
+        font-size: em(14);
+      }
+
       margin-right: 0px;
       li {
         color: $white;
@@ -43,12 +52,19 @@ footer {
     h1 {
       color: rgba(250, 250, 250, .7);
       margin-bottom: em(2);
+
+      @include media($tablet) {
+        font-size: em(18);
+      }
     }
     article.openingsuren {
       @include span-columns(8);
       p {
         color: $white;
         @include media($mobile) {
+          font-size: em(14);
+        }
+        @include media($tablet) {
           font-size: em(14);
         }
       }
