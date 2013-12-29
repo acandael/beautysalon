@@ -5,6 +5,10 @@ section.contact.content {
     margin-top: 0px;
   }
 
+  @include media($tablet) {
+    margin-top: em(40);
+  }
+
     article {
       @include span-columns(7);
       @include pad(0px 0px 0px 20px);
@@ -21,6 +25,10 @@ section.contact.content {
         p {
           font-size: em(14);
         }
+      }
+
+      @include media($tablet) {
+        @include span-columns(5);
       }
     }
 
@@ -64,6 +72,17 @@ section.contact.content {
         @include fill-parent;
         @include shift(0);
     }
+
+    @include media($tablet) {
+      @include span-columns(3);
+      @include shift(0);
+      margin-left: em(0);
+
+      p {
+        font-size: em(14);
+      }
+    }
+
 
     .graphic {
       color: $pink;

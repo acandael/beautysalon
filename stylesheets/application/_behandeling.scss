@@ -5,6 +5,10 @@ section.behandeling.content {
   @include media($mobile) {
     margin-top: 0px;
   }
+
+  @include media($tablet) {
+    margin-top: em(40);
+  }
   
   article {
     @include span-columns(7);

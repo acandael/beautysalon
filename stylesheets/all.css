@@ -2057,7 +2057,8 @@ nav {
   float: right; }
   @media screen and (max-width: 768px) {
     nav {
-      margin-top: 0; } }
+      margin-top: 0;
+      float: left; } }
   @media screen and (max-width: 480px) {
     nav {
       width: 100%;
@@ -2296,6 +2297,9 @@ section.behandeling.content {
   @media screen and (max-width: 480px) {
     section.behandeling.content {
       margin-top: 0px; } }
+  @media screen and (max-width: 768px) {
+    section.behandeling.content {
+      margin-top: 2.5em; } }
   section.behandeling.content article {
     float: left;
     display: block;
@@ -2398,6 +2402,9 @@ section.contact.content {
   @media screen and (max-width: 480px) {
     section.contact.content {
       margin-top: 0px; } }
+  @media screen and (max-width: 768px) {
+    section.contact.content {
+      margin-top: 2.5em; } }
   section.contact.content article {
     float: left;
     display: block;
@@ -2418,6 +2425,14 @@ section.contact.content {
           margin-bottom: 1.25em; }
         section.contact.content article p {
           font-size: 0.875em; } }
+    @media screen and (max-width: 768px) {
+      section.contact.content article {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 61.158%; }
+        section.contact.content article:last-child {
+          margin-right: 0; } }
   section.contact.content form textarea {
     height: 200px; }
   section.contact.content form input[type='submit'] {
@@ -2460,5 +2475,17 @@ section.contact.content {
         padding: .5em 1.5em;
         width: 100%;
         margin-left: 0%; } }
+    @media screen and (max-width: 768px) {
+      section.contact.content aside {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 35.26334%;
+        margin-left: 0%;
+        margin-left: 0em; }
+        section.contact.content aside:last-child {
+          margin-right: 0; }
+        section.contact.content aside p {
+          font-size: 0.875em; } }
     section.contact.content aside .graphic {
       color: #f3a9bb; }
