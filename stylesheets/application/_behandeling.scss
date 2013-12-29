@@ -40,6 +40,10 @@ section.behandeling.content {
       width: 90%;
     }
 
+    @include media($tablet) {
+      margin-left: em(20);
+    }
+
     background: $pink;
     border-radius: 10px;
     border: 2px solid darken($pink, 5);
@@ -49,6 +53,10 @@ section.behandeling.content {
       color: $white;
       text-shadow: 1px 1px 0 darken($pink, 10);
       text-align: center;
+
+      @include media($tablet) {
+        font-size: em(18);
+      }
     }
 
     p {

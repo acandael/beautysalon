@@ -2339,10 +2339,16 @@ section.behandeling.content {
         margin-left: 0%;
         margin: 0.625em auto 1.25em 1.25em;
         width: 90%; } }
+    @media screen and (max-width: 768px) {
+      section.behandeling.content aside {
+        margin-left: 1.25em; } }
     section.behandeling.content aside h2 {
       color: white;
       text-shadow: 1px 1px 0 #ed7c98;
       text-align: center; }
+      @media screen and (max-width: 768px) {
+        section.behandeling.content aside h2 {
+          font-size: 1.125em; } }
     section.behandeling.content aside p {
       color: white;
       text-align: center; }
