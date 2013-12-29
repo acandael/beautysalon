@@ -1,0 +1,49 @@
+section.contact.content {
+  @include outer-container;
+  margin-top: em(100);
+
+    article {
+      @include span-columns(7);
+      @include pad(0px 0px 0px 20px);
+    }
+
+    form {
+    textarea {
+      height: 200px;
+    }
+
+    input[type='submit'] {
+      @include inline-block;
+      @include pad(0.6em 1.0em);
+      @include linear-gradient($pink, darken($pink, 10));
+      float: right;
+      outline: none;
+      user-select: none;
+      white-space: nowrap;
+      border: 2px solid darken($pink, 5);
+      box-shadow: 3px 2px 2px lighten($pink, 10);
+      border-radius: 6px;
+      background: $pink;
+      color: rgba(250, 250, 250, 0.9);
+      text-shadow: 1px 1px 0 darken($pink, 10);
+      opacity: .9;
+      
+      &:hover {
+        opacity: 1;
+        box-shadow: 2px 1px 1px lighten($pink, 10);;
+        color: rgba(250, 250, 250, 1);
+
+      }
+    }
+  }
+
+  aside {
+    @include span-columns(3);
+    @include shift(2);
+
+    .graphic {
+      color: $pink;
+    }
+  }
+}
+

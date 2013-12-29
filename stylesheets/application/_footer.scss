@@ -1,6 +1,10 @@
 div.footer-spacer {
   background: $white;
   height: 155px;
+
+  @include media($mobile) {
+    height: auto;
+  }
 }
 
 footer {
@@ -9,9 +13,18 @@ footer {
     @include outer-container;
     @include pad(20px);
 
+   
     ul.contact {
       //@include shift(1);
       @include span-columns(4);
+
+      @include media($mobile) {
+        position: static;
+        padding: .5em 0;
+        font-size: em(14);
+        @include fill-parent;
+      }
+
       margin-right: 0px;
       li {
         color: $white;
@@ -28,14 +41,24 @@ footer {
     }
     
     h1 {
-      color: $white;
+      color: rgba(250, 250, 250, .7);
       margin-bottom: em(2);
     }
     article.openingsuren {
       @include span-columns(8);
       p {
         color: $white;
+        @include media($mobile) {
+          font-size: em(14);
+        }
       }
+
+      @include media($mobile) {
+       position: static;
+       padding: .5em 0;
+       @include fill-parent;
+      }
+
     }
   }
 

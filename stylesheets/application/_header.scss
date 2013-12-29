@@ -3,12 +3,26 @@ header.top-bar {
   margin-top: 10px;
   height: 150px;
 
+  @include media($mobile) {
+    position: static;
+    padding: 0em 1.5em 1em 1.5em;
+    margin-top: 0px;
+    @include fill-parent;
+    height: auto;
+    background: $pink;
+   
+  }
+
   div.logo {
     float: left;
 
     img {
       height: 150px;
-      width: auto;
+      max-width: 100%;
+    }
+
+    @include media($mobile) {
+      display: none;
     }
   }
 
@@ -21,42 +35,108 @@ header.top-bar {
     &:hover {
       opacity: 1.0;
     }
+    a.phone {
+      color: $black;
+    }
+    @include media($mobile) {
+      float: left;
+      margin-top: 0;
+      a.phone {
+        font-size: em(12);
+      }
+      i {
+        font-size: em(12);
+      }
+    }
   }
 
-  a.phone {
-    color: $black;
-  }
-
-  nav {
+  i#nav-dropdown {
+    display: none;
     float: right;
+    padding: 5px 0 0 20px;
+
+    @include media($mobile) {
+      display: block;
+    }
+
+    @include media($mobile) {
+      display: block;
+    }
+  }
+}
+
+nav {
+    float: right;
+
+    @include media($mobile) {
+      @include fill-parent;
+      padding-top: 0;
+    }
 
     ul {
       font-family: $sans-serif;
       //font-weight: 700;
       margin: 60px 0 0 0;
 
+      @include media($mobile) {
+        display: none;
+        background: $white;
+        margin-top: 1em;
+        border-radius: 6px;
+      }
+
       li {
         @include pad( default 1.5em );
-        display: inline;
+        @include inline-block;
         line-height: em(80);
         list-style-type: none;
         text-align: center;
+
+        &.active a {
+            border-bottom: 3px solid $pink;
+        }
+
+        @include media($mobile){
+          background: $gray;
+          @include fill-parent;
+          padding-left: 0;
+          border-bottom: 1px solid lighten($gray, 5);
+          line-height: em(35);
+
+          &:hover {
+            opacity: .9;
+          }
+
+          &.active {
+            border-bottom: none;
+            color: $pink;
+            opacity: .9;
+
+            a {
+              border-bottom: none;
+            }
+           }
+          }
+        a {
+          color: $black;
+          @include pad(0.6em);
+          border-bottom: 3px solid transparent;
+          font-size: em(18);
+
+          @include media($mobile) {
+            color: rgba(250, 250, 250, .9);
+            //color: $white;
+          }
+          &:hover {
+            border-bottom: 3px solid $pink;
+            color: $pink;
+
+            @include media($mobile) {
+              border-bottom: none;
+            }
+          }
+        }
       }
 
-      a {
-        color: $black;
-        @include pad(0.6em);
-        border-bottom: 3px solid transparent;
-        font-size: em(18);
-        &.active {
-          border-bottom: 3px solid $pink;
-          color: $pink;
-        }
-        &:hover {
-          border-bottom: 3px solid $pink;
-          color: $pink;
-        }
-      }
     }
   }
-}

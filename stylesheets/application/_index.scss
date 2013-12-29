@@ -1,10 +1,22 @@
 section.content {
   @include outer-container;
   margin-top: 30px;
+  @include media($mobile) {
+    margin-top: 0px;
+  }
   article.banner {
     margin-top: 30px;
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px)     {
+    @include media($mobile) {
       display: none;
+    }
+  }
+
+  div.mobile-logo {
+    display: none;
+    width: 150px;
+    margin: 1.2em auto 0px auto;
+    @include media($mobile) {
+      display: block;
     }
   }
 
@@ -13,15 +25,30 @@ section.content {
     @include outer-container;
     @include span-columns(4);
     @include pad(0 1em);
-    position: relative;
+
     margin-top: em(50);
     margin-bottom: 0;
     height: 250px;
+
+
+    @include media($mobile) {
+      position: static;
+      padding: .5em 1.5em;
+      margin-top: em(20);
+      margin-bottom: em(20);
+      border-bottom: 2px solid lighten($gray, 30);
+      @include fill-parent;
+
+    }
 
     header {
       @include row();
       margin-bottom: 2.0em;
       text-align: center;
+
+      @include media($mobile) {
+        margin-bottom: 1em;
+      }
     }
 
     p {
@@ -29,12 +56,10 @@ section.content {
     }
 
     a{
+      float: right;
       margin-right: em(30);
       @include pad(.4em);
       font-weight: 700;
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
       border-bottom: 3px solid transparent;
 
       &:hover {

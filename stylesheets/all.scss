@@ -1,7 +1,7 @@
 @import "normalize";
 @import "bourbon/bourbon";
-@import "normalize";
 @import "bitters/bitters";
+@import "grid-settings";
 @import "neat/neat";
 @import "base/base";
 @import "font-awesome/font-awesome";
@@ -10,3 +10,5 @@
 @import "application/footer";
 
 @import "application/index";
+@import "application/behandeling";
+@import "application/contact";
