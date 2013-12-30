@@ -27,6 +27,11 @@ section.behandeling.content {
     
     ul {
       @include pad(0px 0px 20px 0px);
+      list-style-image:url('../images/bullet.png');
+      padding-left: em(18);
+    }
+    li {
+      padding-left: em(5);
     }
   }
 

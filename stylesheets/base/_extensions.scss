@@ -1,0 +1,24 @@
+    .pink-button {
+      @include inline-block;
+      @include pad(0.6em 1.0em);
+      @include linear-gradient($pink, darken($pink, 10));
+      float: right;
+      outline: none;
+      user-select: none;
+      white-space: nowrap;
+      border: 2px solid darken($pink, 5);
+      box-shadow: 3px 2px 2px lighten($pink, 10);
+      border-radius: 6px;
+      background: $pink;
+      color: rgba(250, 250, 250, 0.9);
+      text-shadow: 1px 1px 0 darken($pink, 10);
+      opacity: .9;
+      
+      &:hover {
+        opacity: 1;
+        box-shadow: 2px 1px 1px lighten($pink, 10);;
+        color: rgba(250, 250, 250, 1);
+
+      }
+    }
+

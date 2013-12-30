@@ -29,9 +29,12 @@ h2 {
 p {
   line-height: 1.5em;
   margin: 0 0 1.2em 0;
+  
+  &.tagline {
+    font-style: italic;
+    font-weight: 500;
+    font-size: em(21);
+    color: #d4aba5;
+  }
 }
 
-a {
-  text-decoration: none;
-  color: $pink;
-}

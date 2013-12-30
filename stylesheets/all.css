@@ -605,10 +605,11 @@ h2 {
 p {
   line-height: 1.5em;
   margin: 0 0 1.2em 0; }
-
-a {
-  text-decoration: none;
-  color: #f3a9bb; }
+  p.tagline {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.3125em;
+    color: #d4aba5; }
 
 fieldset {
   border: none;
@@ -655,6 +656,33 @@ input[type="submit"] {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
+
+.pink-button, section.contact.content form input[type='submit'] {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  padding: 0.6em 1em;
+  background-color: #f3a9bb;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3a9bb), color-stop(100%, #ed7c98));
+  background-image: -webkit-linear-gradient(#f3a9bb, #ed7c98);
+  background-image: linear-gradient(#f3a9bb, #ed7c98);
+  float: right;
+  outline: none;
+  user-select: none;
+  white-space: nowrap;
+  border: 2px solid #f093a9;
+  box-shadow: 3px 2px 2px #f9d6de;
+  border-radius: 6px;
+  background: #f3a9bb;
+  color: rgba(250, 250, 250, 0.9);
+  text-shadow: 1px 1px 0 #ed7c98;
+  opacity: .9; }
+  .pink-button:hover, section.contact.content form input[type='submit']:hover {
+    opacity: 1;
+    box-shadow: 2px 1px 1px #f9d6de;
+    color: #fafafa; }
 
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2209,10 +2237,44 @@ section.content {
     section.content {
       margin-top: 0px; } }
   section.content article.banner {
+    *zoom: 1;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px; }
+    section.content article.banner:before, section.content article.banner:after {
+      content: " ";
+      display: table; }
+    section.content article.banner:after {
+      clear: both; }
     @media screen and (max-width: 480px) {
       section.content article.banner {
         display: none; } }
+    section.content article.banner div.bx-viewport {
+      background: #f8f8f6; }
+    section.content article.banner div.slidertext {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 8.5298%; }
+      section.content article.banner div.slidertext:last-child {
+        margin-right: 0; }
+    section.content article.banner img {
+      float: left; }
+    section.content article.banner h2 {
+      font-size: 2em;
+      padding-top: 1em;
+      margin-bottom: .7em;
+      color: #808283; }
+    section.content article.banner p.tagline {
+      margin-bottom: .7em; }
+    section.content article.banner a {
+      color: #808283;
+      float: right;
+      font-weight: 600; }
+      section.content article.banner a:hover {
+        color: #f3a9bb; }
   section.content div.mobile-logo {
     display: none;
     width: 150px;
@@ -2318,7 +2380,11 @@ section.behandeling.content {
     section.behandeling.content article img {
       padding: 20px 0px; }
     section.behandeling.content article ul {
-      padding: 0px 0px 20px 0px; }
+      padding: 0px 0px 20px 0px;
+      list-style-image: url("../images/bullet.png");
+      padding-left: 1.125em; }
+    section.behandeling.content article li {
+      padding-left: 0.3125em; }
   section.behandeling.content aside {
     float: left;
     display: block;
@@ -2435,32 +2501,6 @@ section.contact.content {
           margin-right: 0; } }
   section.contact.content form textarea {
     height: 200px; }
-  section.contact.content form input[type='submit'] {
-    display: inline-block;
-    vertical-align: baseline;
-    zoom: 1;
-    *display: inline;
-    *vertical-align: auto;
-    padding: 0.6em 1em;
-    background-color: #f3a9bb;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3a9bb), color-stop(100%, #ed7c98));
-    background-image: -webkit-linear-gradient(#f3a9bb, #ed7c98);
-    background-image: linear-gradient(#f3a9bb, #ed7c98);
-    float: right;
-    outline: none;
-    user-select: none;
-    white-space: nowrap;
-    border: 2px solid #f093a9;
-    box-shadow: 3px 2px 2px #f9d6de;
-    border-radius: 6px;
-    background: #f3a9bb;
-    color: rgba(250, 250, 250, 0.9);
-    text-shadow: 1px 1px 0 #ed7c98;
-    opacity: .9; }
-    section.contact.content form input[type='submit']:hover {
-      opacity: 1;
-      box-shadow: 2px 1px 1px #f9d6de;
-      color: #fafafa; }
   section.contact.content aside {
     float: left;
     display: block;
