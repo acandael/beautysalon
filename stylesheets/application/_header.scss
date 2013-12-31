@@ -79,10 +79,6 @@ header.top-bar {
     @include media($mobile) {
       display: block;
     }
-
-    @include media($mobile) {
-      display: block;
-    }
   }
 }
 

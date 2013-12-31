@@ -2077,9 +2077,6 @@ header.top-bar {
     @media screen and (max-width: 480px) {
       header.top-bar i#nav-dropdown {
         display: block; } }
-    @media screen and (max-width: 480px) {
-      header.top-bar i#nav-dropdown {
-        display: block; } }
 
 nav {
   float: right; }
@@ -2250,6 +2247,9 @@ section.content {
     @media screen and (max-width: 480px) {
       section.content article.banner {
         display: none; } }
+    @media screen and (max-width: 768px) {
+      section.content article.banner div.bx-wrapper {
+        width: 95%; } }
     section.content article.banner div.bx-viewport {
       background: #f8f8f6; }
     section.content article.banner div.slidertext {
@@ -2260,15 +2260,42 @@ section.content {
       margin-left: 8.5298%; }
       section.content article.banner div.slidertext:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.content article.banner div.slidertext {
+          float: left;
+          display: block;
+          margin-right: 3.57866%;
+          width: 48.21067%;
+          margin-left: 0%;
+          margin-left: 0.625em;
+          padding-right: 0.3125em; }
+          section.content article.banner div.slidertext:last-child {
+            margin-right: 0; } }
     section.content article.banner img {
       float: left; }
+      @media screen and (max-width: 768px) {
+        section.content article.banner img {
+          width: 45%; } }
     section.content article.banner h2 {
       font-size: 2em;
       padding-top: 1em;
       margin-bottom: .7em;
       color: #808283; }
+      @media screen and (max-width: 768px) {
+        section.content article.banner h2 {
+          font-size: 1.2em;
+          padding-top: .5em;
+          margin-bottom: .3em; } }
+    @media screen and (max-width: 768px) {
+      section.content article.banner p {
+        font-size: 0.875em;
+        margin-bottom: 0; } }
     section.content article.banner p.tagline {
       margin-bottom: .7em; }
+      @media screen and (max-width: 768px) {
+        section.content article.banner p.tagline {
+          margin-bottom: .3em;
+          font-size: 1.125em; } }
     section.content article.banner a {
       color: #808283;
       float: right;
@@ -2310,6 +2337,9 @@ section.content {
         margin-bottom: 1.25em;
         border-bottom: 2px solid #e7e8e8;
         width: 100%; } }
+    @media screen and (max-width: 768px) {
+      section.content article.section {
+        margin-top: 0; } }
     section.content article.section header {
       *zoom: 1;
       display: block;
@@ -2323,9 +2353,13 @@ section.content {
       @media screen and (max-width: 480px) {
         section.content article.section header {
           margin-bottom: 1em; } }
+      @media screen and (max-width: 768px) {
+        section.content article.section header {
+          margin-bottom: 1em; } }
     @media screen and (max-width: 768px) {
       section.content article.section h1 {
-        font-size: 1em; }
+        font-size: 1em;
+        margin-bottom: .5em; }
       section.content article.section p {
         font-size: 0.875em; }
       section.content article.section ul {

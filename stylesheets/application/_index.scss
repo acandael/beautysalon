@@ -11,15 +11,33 @@ section.content {
       display: none;
     }
 
+    div.bx-wrapper {
+      @include media($tablet) {
+        width: 95%;
+      }
+    }
+
     div.bx-viewport {
       background: #f8f8f6;
     }
     div.slidertext{
       @include span-columns(5);
       @include shift(1);
+
+      @include media($tablet) {
+        @include span-columns(4);
+        @include shift(0);
+        margin-left: em(10);
+        padding-right: em(5);
+      }
     }
     img {
       float: left;
+
+      @include media($tablet)
+      {
+        width: 45%;
+      }
     }
 
     h2 {
@@ -27,10 +45,33 @@ section.content {
       padding-top: 1em;
       margin-bottom: .7em;
       color: darken($gray, 10);
+
+      @include media($tablet) {
+        font-size: 1.2em;
+        padding-top: .5em;
+        margin-bottom: .3em;
+      }
     }
 
-    p.tagline {
-      margin-bottom: .7em;
+    p {
+      @include media($tablet) {
+        font-size: em(14);
+        margin-bottom: 0;
+      }
+      &.tagline {
+        margin-bottom: .7em;
+        @include media($tablet) {
+          margin-bottom: .3em;
+          font-size: em(18);
+        }
+      }
+      &.more-info {
+
+      }
+    }
+
+    p {
+      
     }
     
     a {
@@ -75,6 +116,10 @@ section.content {
 
     }
 
+    @include media($tablet) {
+      margin-top: 0;
+    }
+
     header {
       @include row();
       margin-bottom: 2.0em;
@@ -83,11 +128,15 @@ section.content {
       @include media($mobile) {
         margin-bottom: 1em;
       }
+      @include media($tablet) {
+        margin-bottom: 1em;
+      }
     }
 
     @include media($tablet) {
       h1 {
         font-size: em(16);
+        margin-bottom: .5em;
       }
 
       p {
