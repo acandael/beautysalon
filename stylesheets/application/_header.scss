@@ -19,7 +19,6 @@ header.top-bar {
 
   div.logo {
     float: left;
-
     img {
       height: 150px;
       max-width: 100%;
@@ -30,6 +29,7 @@ header.top-bar {
     }
 
     @include media($tablet) {
+      margin-left: em(10);
       img {
         width: 80%;
         height: auto;

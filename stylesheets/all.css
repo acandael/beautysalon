@@ -2045,9 +2045,11 @@ header.top-bar {
       header.top-bar div.logo {
         display: none; } }
     @media screen and (max-width: 768px) {
-      header.top-bar div.logo img {
-        width: 80%;
-        height: auto; } }
+      header.top-bar div.logo {
+        margin-left: 0.625em; }
+        header.top-bar div.logo img {
+          width: 80%;
+          height: auto; } }
   header.top-bar span.graphic {
     float: right;
     margin-right: 2.1em;
@@ -2233,6 +2235,9 @@ section.content {
   @media screen and (max-width: 480px) {
     section.content {
       margin-top: 0px; } }
+  @media screen and (max-width: 768px) {
+    section.content {
+      margin-top: 0.3125em; } }
   section.content article.banner {
     *zoom: 1;
     max-width: 68em;
@@ -2247,6 +2252,9 @@ section.content {
     @media screen and (max-width: 480px) {
       section.content article.banner {
         display: none; } }
+    @media screen and (max-width: 768px) {
+      section.content article.banner {
+        margin-top: 0.9375em; } }
     @media screen and (max-width: 768px) {
       section.content article.banner div.bx-wrapper {
         width: 95%; } }
@@ -2275,7 +2283,8 @@ section.content {
       float: left; }
       @media screen and (max-width: 768px) {
         section.content article.banner img {
-          width: 45%; } }
+          width: 45%;
+          height: auto; } }
     section.content article.banner h2 {
       font-size: 2em;
       padding-top: 1em;

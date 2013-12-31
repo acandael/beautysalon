@@ -4,11 +4,18 @@ section.content {
   @include media($mobile) {
     margin-top: 0px;
   }
+  @include media($tablet) {
+    margin-top: em(5);
+  }
   article.banner {
     @include outer-container; 
     margin-top: 30px;
     @include media($mobile) {
       display: none;
+    }
+
+    @include media($tablet) {
+      margin-top: em(15);
     }
 
     div.bx-wrapper {
@@ -37,6 +44,7 @@ section.content {
       @include media($tablet)
       {
         width: 45%;
+        height: auto;
       }
     }
 
