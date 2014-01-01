@@ -611,6 +611,11 @@ p {
     font-size: 1.3125em;
     color: #d4aba5; }
 
+a {
+  color: #f3a9bb; }
+  a:hover {
+    color: #f3a9bb; }
+
 fieldset {
   border: none;
   border-radius: 10px; }
@@ -2057,10 +2062,15 @@ header.top-bar {
     margin-right: 2.1em;
     color: #030303;
     font-size: 1.2em; }
+    @media screen and (max-width: 768px) {
+      header.top-bar span.graphic {
+        margin-right: 1.2em; } }
     header.top-bar span.graphic:hover {
       color: #f3a9bb; }
     header.top-bar span.graphic a.phone {
       color: #030303; }
+      header.top-bar span.graphic a.phone:hover {
+        color: #f3a9bb; }
     @media screen and (max-width: 480px) {
       header.top-bar span.graphic {
         float: left;
@@ -2103,7 +2113,7 @@ nav {
         border-radius: 6px; } }
     @media screen and (max-width: 768px) {
       nav ul {
-        margin-top: 0px; } }
+        margin: 30px 0 0 0; } }
     nav ul li {
       padding: 2.35765% 1.5em;
       display: inline-block;
@@ -2118,8 +2128,9 @@ nav {
         border-bottom: 3px solid #f3a9bb; }
       @media screen and (max-width: 768px) {
         nav ul li {
-          font-size: 0.875em;
-          line-height: 1.25em; } }
+          padding: 2.35765% 0.3em;
+          font-size: 0.8em;
+          line-height: 1em; } }
       @media screen and (max-width: 480px) {
         nav ul li {
           background: #9a9b9c;
@@ -2382,11 +2393,9 @@ section.content {
       margin-right: 1.875em;
       padding: 0.4em;
       font-weight: 700;
-      border-bottom: 3px solid transparent;
-      color: #f3a9bb; }
+      border-bottom: 3px solid transparent; }
       section.content article.section a:hover {
-        border-bottom: 3px solid #f3a9bb;
-        color: #f3a9bb; }
+        border-bottom: 3px solid #f3a9bb; }
     section.content article.section ul {
       list-style-image: url("../images/bullet.png");
       padding-left: 1em; }

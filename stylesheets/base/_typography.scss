@@ -38,3 +38,11 @@ p {
   }
 }
 
+a {
+  color: $pink;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
