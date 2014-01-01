@@ -676,13 +676,15 @@ input[type="submit"] {
   box-shadow: 3px 2px 2px #f9d6de;
   border-radius: 6px;
   background: #f3a9bb;
-  color: rgba(250, 250, 250, 0.9);
-  text-shadow: 1px 1px 0 #ed7c98;
-  opacity: .9; }
+  color: white;
+  text-shadow: 1px 1px 0 #f093a9;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; }
   .pink-button:hover, section.contact.content form input[type='submit']:hover {
-    opacity: 1;
     box-shadow: 2px 1px 1px #f9d6de;
-    color: #fafafa; }
+    color: #fafafa;
+    background: #f093a9; }
 
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2056,7 +2058,7 @@ header.top-bar {
     color: #030303;
     font-size: 1.2em; }
     header.top-bar span.graphic:hover {
-      opacity: 1.0; }
+      color: #f3a9bb; }
     header.top-bar span.graphic a.phone {
       color: #030303; }
     @media screen and (max-width: 480px) {
