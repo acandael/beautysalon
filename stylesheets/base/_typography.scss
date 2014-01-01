@@ -11,7 +11,7 @@ h1 {
   margin-bottom: em(16);
   font-family: $sans-serif;
   color: darken($gray, 10);
-  font-size: em(24);
+  font-size: 1.2em;
   font-weight: 600;
 
   @include media($mobile) {
@@ -42,6 +42,10 @@ p {
     font-size: .9em;
   }
   
+  @include media($mobile) {
+    font-size: .8em;
+  }
+  
   &.tagline {
     font-style: italic;
     font-weight: 500;
@@ -67,6 +71,9 @@ ul {
   li {
     @include media($tablet) {
       font-size: .9em;
+    }
+    @include media($mobile) {
+      font-size: .8em;
     }
   }
 }
