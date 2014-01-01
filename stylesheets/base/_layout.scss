@@ -1,0 +1,5 @@
+img {
+  @include media($tablet) {
+    width: 60%;
+  }
+}
