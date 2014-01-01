@@ -40,7 +40,6 @@ section.content {
     }
     img {
       float: left;
-
       @include media($tablet)
       {
         width: 45%;
@@ -166,6 +165,7 @@ section.content {
       @include pad(.4em);
       font-weight: 700;
       border-bottom: 3px solid transparent;
+      color: $pink;
 
       &:hover {
         border-bottom: 3px solid $pink;
