@@ -43,7 +43,7 @@ section.content {
       @include media($tablet)
       {
         width: 45%;
-        height: auto;
+        height: 243px;
       }
     }
 
@@ -62,7 +62,6 @@ section.content {
 
     p {
       @include media($tablet) {
-        font-size: em(14);
         margin-bottom: 0;
       }
       &.tagline {
@@ -125,6 +124,7 @@ section.content {
 
     @include media($tablet) {
       margin-top: 0;
+      height: 200px;
     }
 
     header {
@@ -142,12 +142,12 @@ section.content {
 
     @include media($tablet) {
       h1 {
-        font-size: em(16);
-        margin-bottom: .5em;
+        font-size: .9em;
+        margin-bottom: .2em;
       }
 
       p {
-        font-size: em(14);
+        font-size: .8em;
       }
 
       ul {

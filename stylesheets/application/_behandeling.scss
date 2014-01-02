@@ -23,6 +23,10 @@ section.behandeling.content {
     }
     img {
       @include pad(20px 0px);
+
+      @include media($tablet) {
+        @include pad(5px 0px);
+      }
     }
     
     ul {
@@ -66,6 +70,10 @@ section.behandeling.content {
       @include media($tablet) {
         font-size: em(18);
       }
+
+      @include media($mobile) {
+        font-size: 1em;
+      }
     }
 
     p {
@@ -77,7 +85,11 @@ section.behandeling.content {
       margin: 0 auto;
       width: 100px;
       a.button {
-      @include button(shiny, $gray);
+      @include button($gray);
+      font-size: 1em;
+      @include media($mobile) {
+        font-size: .8em;        
+      }
      }
     }
   }

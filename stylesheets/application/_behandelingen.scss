@@ -1,0 +1,44 @@
+section.behandelingen.content {
+  @include outer-container;
+  margin-top: em(100);
+
+  @include media($mobile) {
+    margin-top: 0px;
+  }
+
+  @include media($tablet) {
+    margin-top: em(40);
+    h1 {
+      margin-left: 1.2em;
+    }
+    h2 {
+      margin-left: 1.5em;
+    }
+  }
+  div.behandelingen {
+    @include span-columns(7);
+    @include pad(0px 0px 0px 20px);
+    article {
+      margin-top: em(20);
+      border-bottom: 2px solid lighten($gray, 10);
+      @include media($mobile) {
+        position: static;
+        padding: .5em 1.5em;
+        margin-top: em(20);
+        margin-bottom: em(20);
+        @include fill-parent;
+      }
+      img {
+        @include pad(0px 0px);
+        width: 40%;
+        float: right;
+        @include media($tablet) {
+          @include pad(5px 0px);
+        }
+      }
+    }
+  }
+  aside {
+    @extend .afspraak;
+  }
+}
