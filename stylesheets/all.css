@@ -2636,15 +2636,19 @@ section.behandelingen.content {
   section.behandelingen.content:after {
     clear: both; }
   @media screen and (max-width: 480px) {
-    section.behandelingen.content {
-      margin-top: 0px; } }
+    section.behandelingen.content h1 {
+      margin-left: 1.2em; }
+    section.behandelingen.content h2 {
+      margin-left: 1.5em; } }
   @media screen and (max-width: 768px) {
     section.behandelingen.content {
       margin-top: 2.5em; }
       section.behandelingen.content h1 {
         margin-left: 1.2em; }
       section.behandelingen.content h2 {
-        margin-left: 1.5em; } }
+        margin-left: 1.5em;
+        margin-bottom: 0px;
+        text-align: center; } }
   section.behandelingen.content div.behandelingen {
     float: left;
     display: block;
@@ -2653,6 +2657,12 @@ section.behandelingen.content {
     padding: 0px 0px 0px 20px; }
     section.behandelingen.content div.behandelingen:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      section.behandelingen.content div.behandelingen {
+        position: static;
+        padding: .5em 1.5em;
+        margin-bottom: 1.25em;
+        width: 100%; } }
     section.behandelingen.content div.behandelingen article {
       margin-top: 1.25em;
       border-bottom: 2px solid #b4b4b5; }
