@@ -93,13 +93,14 @@ header.top-bar {
 }
 
 nav {
-    float: right;
-
+    
+     float: right;
+     z-index: 5;
+     position: relative;
+     
     @include media($tablet) {
-
       margin-top: 0;
       float: left;
-
     }
 
     @include media($mobile) {
@@ -111,6 +112,7 @@ nav {
       font-family: $sans-serif;
       //font-weight: 700;
       margin: 60px 0 0 0;
+      position: relative;	
 
       @include media($mobile) {
         display: none;
@@ -124,14 +126,48 @@ nav {
       }
 
       li {
+        position: relative;
         @include pad( default 1.5em );
         @include inline-block;
-        line-height: em(80);
+        line-height: em(40);
         list-style-type: none;
         text-align: center;
 
+        &:hover ul {
+          left: 0px;
+        }
+
+
         &.active a {
             border-bottom: 3px solid $pink;
+            
+        }
+
+        ul {
+          margin-top: 0px;
+          padding: 0;
+          position: absolute;
+          left: -9999px;
+          background: $gray;
+          opacity: .9;
+          border-radius: 6px;
+
+          li {
+            @include fill-parent;
+            border-bottom: 2px solid lighten($gray, 5);
+            &:hover {
+              background: lighten($gray, 5);
+            }
+          }
+
+          
+          a {
+            color: $white;
+            &:hover {
+              border-bottom: none;
+              color: $white;
+            }
+          }
         }
 
         @include media($tablet) {
