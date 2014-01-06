@@ -20,7 +20,7 @@ section.behandelingen.content {
     h2 {
       margin-left: 1.5em;
       margin-bottom: 0px;
-      text-align: center;
+      //text-align: center;
     }
   }
   div.behandelingen {
@@ -53,6 +53,11 @@ section.behandelingen.content {
     }
   }
   aside {
+    @include span-columns(4);
+    @include shift(1);
+    margin-left: em(35);
+    @include pad(1em);
     @extend .afspraak;
+
   }
 }
