@@ -159,7 +159,8 @@ section.content {
       color: lighten($black, 10);
     }
 
-    a{
+    
+    a.more-info {
       float: right;
       margin-right: em(30);
       @include pad(.4em);
@@ -170,6 +171,7 @@ section.content {
         border-bottom: 3px solid $pink;
       }
     }
+    
     ul {
       list-style-image:url('../images/bullet.png');
       padding-left: 1em;

@@ -2519,13 +2519,13 @@ section.content {
         font-size: 0.875em; } }
     section.content article.section p {
       color: #1c1c1c; }
-    section.content article.section a {
+    section.content article.section a.more-info {
       float: right;
       margin-right: 1.875em;
       padding: 0.4em;
       font-weight: 700;
       border-bottom: 3px solid transparent; }
-      section.content article.section a:hover {
+      section.content article.section a.more-info:hover {
         border-bottom: 3px solid #f3a9bb; }
     section.content article.section ul {
       list-style-image: url("../images/bullet.png");
