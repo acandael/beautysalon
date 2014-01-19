@@ -2267,7 +2267,8 @@ nav {
           nav ul li ul li:hover {
             background: #a7a8a9; }
         nav ul li ul a {
-          color: white; }
+          color: white;
+          font-size: .9em; }
           nav ul li ul a:hover {
             border-bottom: none;
             color: white; }
