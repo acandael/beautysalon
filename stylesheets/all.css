@@ -2651,7 +2651,11 @@ section.behandelingen.content {
           padding: .5em 1.5em;
           margin-top: 1.25em;
           margin-bottom: 1.25em;
-          width: 100%; } }
+          width: 100%; }
+          section.behandelingen.content div.behandelingen article h1 {
+            font-size: .9em;
+            margin-left: 0px;
+            margin-bottom: 0.625em; } }
       section.behandelingen.content div.behandelingen article img {
         padding: 0px 0px;
         margin-left: 1.25em;
