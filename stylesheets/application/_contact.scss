@@ -30,6 +30,16 @@ section.contact.content {
       @include media($tablet) {
         @include span-columns(5);
       }
+
+      div.errorlist {
+        margin-top: em(30);
+        padding-top: em(5);
+        ul {
+          li {
+          color: #ff0000;
+          }
+        }
+      }
     }
 
     form {
@@ -44,6 +54,7 @@ section.contact.content {
     div.honey {
       display: none;
     }
+
   }
 
   aside {

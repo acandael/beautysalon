@@ -2596,6 +2596,9 @@ section.behandelingen.content {
     display: table; }
   section.behandelingen.content:after {
     clear: both; }
+  section.behandelingen.content h2 {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em; }
   @media screen and (max-width: 480px) {
     section.behandelingen.content h1 {
       margin-left: 1.2em; }
@@ -2625,6 +2628,7 @@ section.behandelingen.content {
         width: 100%; } }
     section.behandelingen.content div.behandelingen article {
       margin-top: 1.25em;
+      margin-bottom: 1.25em;
       border-bottom: 2px solid #b4b4b5; }
       @media screen and (max-width: 480px) {
         section.behandelingen.content div.behandelingen article {
@@ -2635,6 +2639,7 @@ section.behandelingen.content {
           width: 100%; } }
       section.behandelingen.content div.behandelingen article img {
         padding: 0px 0px;
+        margin-left: 1.25em;
         width: 40%;
         float: right; }
         @media screen and (max-width: 768px) {
@@ -2696,6 +2701,11 @@ section.contact.content {
         width: 61.158%; }
         section.contact.content article:last-child {
           margin-right: 0; } }
+    section.contact.content article div.errorlist {
+      margin-top: 1.875em;
+      padding-top: 0.3125em; }
+      section.contact.content article div.errorlist ul li {
+        color: #ff0000; }
   section.contact.content form textarea {
     height: 200px; }
   section.contact.content form div.honey {

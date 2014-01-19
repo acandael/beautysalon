@@ -2,6 +2,11 @@ section.behandelingen.content {
   @include outer-container;
   margin-top: em(100);
 
+  h2 {
+    margin-top: em(20);
+    margin-bottom: em(20);
+  }
+
   @include media($mobile) {
     
     h1 {
@@ -34,6 +39,7 @@ section.behandelingen.content {
     }
     article {
       margin-top: em(20);
+      margin-bottom: em(20);
       border-bottom: 2px solid lighten($gray, 10);
       @include media($mobile) {
         position: static;
@@ -44,6 +50,7 @@ section.behandelingen.content {
       }
       img {
         @include pad(0px 0px);
+        margin-left: em(20);
         width: 40%;
         float: right;
         @include media($tablet) {
