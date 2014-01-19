@@ -2698,6 +2698,8 @@ section.contact.content {
           margin-right: 0; } }
   section.contact.content form textarea {
     height: 200px; }
+  section.contact.content form div.honey {
+    display: none; }
   section.contact.content aside {
     float: left;
     display: block;

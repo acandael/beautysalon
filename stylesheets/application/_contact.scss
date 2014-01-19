@@ -40,6 +40,10 @@ section.contact.content {
     input[type='submit'] {
       @extend .pink-button;
     }
+
+    div.honey {
+      display: none;
+    }
   }
 
   aside {
