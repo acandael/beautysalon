@@ -101,6 +101,8 @@ section.content {
     margin: 1.2em auto 0px auto;
     @include media($mobile) {
       display: block;
+      @include fill-parent;
+      text-align: center;
     }
   }
 
@@ -116,6 +118,10 @@ section.content {
     margin-bottom: 0;
     height: 250px;
 
+    @include media($tablet) {
+      margin-top: 0;
+      height: 200px;
+    }
 
     @include media($mobile) {
       position: static;
@@ -124,12 +130,6 @@ section.content {
       margin-bottom: em(20);
       border-bottom: 2px solid lighten($gray, 30);
       @include fill-parent;
-
-    }
-
-    @include media($tablet) {
-      margin-top: 0;
-      height: 200px;
     }
 
     header {
@@ -150,18 +150,18 @@ section.content {
         font-size: .9em;
         margin-bottom: .2em;
       }
-
-      p {
-        font-size: .8em;
-      }
-
-      ul {
-        font-size: em(14);
-      }
     }
 
     p {
       color: lighten($black, 10);
+
+      @include media($tablet) {
+        font-size: .9em;
+      }
+
+      @include media($mobile) {
+        font-size: .9em;
+      }
     }
 
     
@@ -175,11 +175,18 @@ section.content {
       &:hover {
         border-bottom: 3px solid $pink;
       }
+
+      @include media($mobile) {
+        margin-top: em(20);
+      }
     }
     
     ul {
       list-style-image:url('../images/bullet.png');
       padding-left: 1em;
+      @include media($mobile) {
+        margin-bottom: em(30);
+      }
     }
   }
 }
