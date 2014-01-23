@@ -7,16 +7,7 @@ section.behandelingen.content {
     margin-bottom: em(20);
   }
 
-  @include media($mobile) {
-    
-    h1 {
-      margin-left: 1.2em;
-    }
-    h2 {
-      margin-left: 1.5em;
-    }
-  }
-
+  
   @include media($tablet) {
     margin-top: em(40);
     h1 {
@@ -28,6 +19,17 @@ section.behandelingen.content {
       //text-align: center;
     }
   }
+  
+  @include media($mobile) {
+    
+    h1 {
+      margin-left: 1.2em;
+    }
+    h2 {
+      margin-left: 1.5em;
+    }
+  }
+
   div.behandelingen {
     @include span-columns(7);
     @include pad(0px 0px 0px 20px);
@@ -67,10 +69,6 @@ section.behandelingen.content {
     }
   }
   aside {
-    @include span-columns(4);
-    @include shift(1);
-    margin-left: em(35);
-    @include pad(1em);
     @extend .afspraak;
 
   }

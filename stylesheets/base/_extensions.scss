@@ -21,58 +21,64 @@
       }
     }
 
-    .afspraak {
-@include span-columns(4);
-      @include shift(1);
-      @include pad(1.5em);
+.afspraak {
+    @include span-columns(4);
+    @include shift(1);
+    @include pad(1.5em);
 
-      @include media($mobile) {
-        position: static;
-        padding: .5em .5em;
-        @include fill-parent;
-        @include shift(0);
-        margin: em(10) auto em(20) em(20);
-        width: 90%;
-      }
+
+    @include media($tablet) {
+      margin-left: em(20);
+    }
+
+    @include media($mobile) {
+      position: static;
+      padding: .5em .5em;
+      @include fill-parent;
+      @include shift(0);
+      margin: em(10) auto em(20) em(20);
+      width: 90%;
+    }
+
+    background: $pink;
+    border-radius: 10px;
+    border: 2px solid darken($pink, 5);
+    @include linear-gradient($pink, darken($pink, 5));
+
+    h2 {
+      color: $white;
+      text-shadow: 1px 1px 0 darken($pink, 10);
+      text-align: center;
 
       @include media($tablet) {
-        margin-left: em(20);
+        font-size: em(18);
       }
 
-      background: $pink;
-      border-radius: 10px;
-      border: 2px solid darken($pink, 5);
-      @include linear-gradient($pink, darken($pink, 5));
-
-      h2 {
-        color: $white;
-        text-shadow: 1px 1px 0 darken($pink, 10);
-        text-align: center;
-
-        @include media($tablet) {
-          font-size: em(18);
-        }
-
-        @include media($mobile) {
-          font-size: 1em;
-        }
-      }
-
-      p {
-        color: $white;
-        text-align: center;
-      }
-
-      div {
-        margin: 0 auto;
-        width: 100px;
-        a.button {
-        @include button($gray);
+      @include media($mobile) {
         font-size: 1em;
-        @include media($mobile) {
-          font-size: .8em;        
-        }
-       }
+        margin-bottom: em(10);
+        margin-top: 0;
+      }
     }
 
+    p {
+      color: $white;
+      text-align: center;
+
+      @include media($mobile) {
+        font-size: .9em;
+      }
     }
+
+    div {
+      margin: 0 auto;
+      width: 100px;
+      a.button {
+      @include button($gray);
+      font-size: 1em;
+      @include media($mobile) {
+        font-size: .8em;        
+      }
+     }
+  }
+ }
