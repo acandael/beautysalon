@@ -12,6 +12,11 @@ section.contact.content {
     article {
       @include span-columns(7);
       @include pad(0px 0px 0px 20px);
+
+      @include media($tablet) {
+        @include span-columns(5);
+      }
+
       @include media($mobile) {
         position: static;
         padding: .5em 1.5em;
@@ -25,10 +30,6 @@ section.contact.content {
         p {
           font-size: em(14);
         }
-      }
-
-      @include media($tablet) {
-        @include span-columns(5);
       }
 
       div.errorlist {

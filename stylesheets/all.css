@@ -2715,6 +2715,14 @@ section.contact.content {
     padding: 0px 0px 0px 20px; }
     section.contact.content article:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      section.contact.content article {
+        float: left;
+        display: block;
+        margin-right: 3.22581%;
+        width: 61.29032%; }
+        section.contact.content article:last-child {
+          margin-right: 0; } }
     @media screen and (max-width: 480px) {
       section.contact.content article {
         position: static;
@@ -2727,14 +2735,6 @@ section.contact.content {
           margin-bottom: 1.25em; }
         section.contact.content article p {
           font-size: 0.875em; } }
-    @media screen and (max-width: 768px) {
-      section.contact.content article {
-        float: left;
-        display: block;
-        margin-right: 3.22581%;
-        width: 61.29032%; }
-        section.contact.content article:last-child {
-          margin-right: 0; } }
     section.contact.content article div.errorlist {
       margin-top: 1.875em;
       padding-top: 0.3125em; }
