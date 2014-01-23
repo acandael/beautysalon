@@ -717,9 +717,9 @@ input[type="submit"] {
 .afspraak, section.behandeling.content aside, section.behandelingen.content aside {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
-  margin-left: 8.5298%;
+  margin-right: 2.12766%;
+  width: 31.91489%;
+  margin-left: 8.51064%;
   padding: 1.5em;
   background: #f3a9bb;
   border-radius: 10px;
@@ -2136,6 +2136,9 @@ header.top-bar {
     display: table; }
   header.top-bar:after {
     clear: both; }
+  @media screen and (min-width: 47.5em) {
+    header.top-bar {
+      padding-left: 1.25em; } }
   @media screen and (max-width: 480px) {
     header.top-bar {
       position: static;
@@ -2152,6 +2155,10 @@ header.top-bar {
     header.top-bar div.logo img {
       height: 150px;
       max-width: 100%; }
+    @media screen and (min-width: 47.5em) {
+      header.top-bar div.logo img {
+        width: 80%;
+        height: auto; } }
     @media screen and (max-width: 768px) {
       header.top-bar div.logo {
         margin-left: 0.625em; }
@@ -2237,7 +2244,7 @@ nav {
         margin: 30px 0 0 0; } }
     nav ul li {
       position: relative;
-      padding: 2.35765% 1.5em;
+      padding: 2.12766% 1.5em;
       display: inline-block;
       vertical-align: baseline;
       zoom: 1;
@@ -2246,6 +2253,9 @@ nav {
       line-height: 2.5em;
       list-style-type: none;
       text-align: center; }
+      @media screen and (min-width: 47.5em) {
+        nav ul li {
+          padding: 2.12766% 0.9em; } }
       nav ul li:hover ul {
         left: 0px; }
       nav ul li.active a {
@@ -2274,7 +2284,7 @@ nav {
             color: white; }
       @media screen and (max-width: 768px) {
         nav ul li {
-          padding: 2.35765% 0.3em;
+          padding: 2.12766% 0.3em;
           font-size: 0.8em;
           line-height: 2.1875em; } }
       @media screen and (max-width: 480px) {
@@ -2333,8 +2343,8 @@ footer {
     footer section.footer ul.contact {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
+      margin-right: 2.12766%;
+      width: 31.91489%;
       margin-right: 0px; }
       footer section.footer ul.contact:last-child {
         margin-right: 0; }
@@ -2362,8 +2372,8 @@ footer {
   footer article.openingsuren {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
+    margin-right: 2.12766%;
+    width: 65.95745%; }
     footer article.openingsuren:last-child {
       margin-right: 0; }
     footer article.openingsuren p {
@@ -2391,6 +2401,10 @@ section.content {
     display: table; }
   section.content:after {
     clear: both; }
+  @media screen and (min-width: 47.5em) {
+    section.content {
+      padding-left: 1.25em;
+      padding-right: 0.625em; } }
   @media screen and (max-width: 480px) {
     section.content {
       margin-top: 0px; } }
@@ -2422,17 +2436,17 @@ section.content {
     section.content article.banner div.slidertext {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 40.29137%;
-      margin-left: 8.5298%; }
+      margin-right: 2.12766%;
+      width: 40.42553%;
+      margin-left: 8.51064%; }
       section.content article.banner div.slidertext:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
         section.content article.banner div.slidertext {
           float: left;
           display: block;
-          margin-right: 3.57866%;
-          width: 48.21067%;
+          margin-right: 3.22581%;
+          width: 48.3871%;
           margin-left: 0%;
           margin-left: 0.625em;
           padding-right: 0.3125em; }
@@ -2483,8 +2497,8 @@ section.content {
     margin-right: auto;
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
+    margin-right: 2.12766%;
+    width: 31.91489%;
     padding: 0 1em;
     margin-top: 3.125em;
     margin-bottom: 0;
@@ -2566,8 +2580,8 @@ section.behandeling.content {
   section.behandeling.content article {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%;
+    margin-right: 2.12766%;
+    width: 57.44681%;
     padding: 0px 0px 0px 20px; }
     section.behandeling.content article:last-child {
       margin-right: 0; }
@@ -2592,9 +2606,9 @@ section.behandeling.content {
   section.behandeling.content aside {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 8.5298%;
+    margin-right: 2.12766%;
+    width: 31.91489%;
+    margin-left: 8.51064%;
     margin-left: 2.1875em;
     padding: 1em; }
     section.behandeling.content aside:last-child {
@@ -2630,8 +2644,8 @@ section.behandelingen.content {
   section.behandelingen.content div.behandelingen {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%;
+    margin-right: 2.12766%;
+    width: 57.44681%;
     padding: 0px 0px 0px 20px; }
     section.behandelingen.content div.behandelingen:last-child {
       margin-right: 0; }
@@ -2668,9 +2682,9 @@ section.behandelingen.content {
   section.behandelingen.content aside {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 8.5298%;
+    margin-right: 2.12766%;
+    width: 31.91489%;
+    margin-left: 8.51064%;
     margin-left: 2.1875em;
     padding: 1em; }
     section.behandelingen.content aside:last-child {
@@ -2696,8 +2710,8 @@ section.contact.content {
   section.contact.content article {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%;
+    margin-right: 2.12766%;
+    width: 57.44681%;
     padding: 0px 0px 0px 20px; }
     section.contact.content article:last-child {
       margin-right: 0; }
@@ -2717,8 +2731,8 @@ section.contact.content {
       section.contact.content article {
         float: left;
         display: block;
-        margin-right: 3.57866%;
-        width: 61.158%; }
+        margin-right: 3.22581%;
+        width: 61.29032%; }
         section.contact.content article:last-child {
           margin-right: 0; } }
     section.contact.content article div.errorlist {
@@ -2733,9 +2747,9 @@ section.contact.content {
   section.contact.content aside {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-    margin-left: 17.05961%; }
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    margin-left: 17.02128%; }
     section.contact.content aside:last-child {
       margin-right: 0; }
     @media screen and (max-width: 480px) {
@@ -2748,8 +2762,8 @@ section.contact.content {
       section.contact.content aside {
         float: left;
         display: block;
-        margin-right: 3.57866%;
-        width: 35.26334%;
+        margin-right: 3.22581%;
+        width: 35.48387%;
         margin-left: 0%;
         margin-left: 0em; }
         section.contact.content aside:last-child {

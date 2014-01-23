@@ -1,6 +1,11 @@
 section.content {
   @include outer-container;
   margin-top: 30px;
+
+  @include media($medium-screen) {
+    padding-left: em(20);
+    padding-right: em(10);
+  }
   @include media($mobile) {
     margin-top: 0px;
   }

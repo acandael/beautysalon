@@ -3,6 +3,11 @@ header.top-bar {
   margin-top: 10px;
   height: 150px;
 
+  @include media($medium-screen)
+  {
+    padding-left: em(20);
+  }
+
   @include media($mobile) {
     position: static;
     padding: 0em 1.5em 1em 1.5em;
@@ -22,6 +27,13 @@ header.top-bar {
     img {
       height: 150px;
       max-width: 100%;
+    }
+
+    @include media($medium-screen) {
+      img {
+        width: 80%;
+        height: auto;
+      }
     }
 
 
@@ -132,6 +144,11 @@ nav {
       margin: 60px 0 0 0;
       position: relative;	
 
+      @include media($medium-screen)
+      {
+        //margin: 30px 0 0 0;
+      }
+
       @include media($mobile) {
         display: none;
         background: $white;
@@ -150,6 +167,10 @@ nav {
         line-height: em(40);
         list-style-type: none;
         text-align: center;
+
+        @include media($medium-screen) {
+          @include pad( default .9em );
+        }
 
         &:hover ul {
           left: 0px;
