@@ -616,7 +616,7 @@ p {
       font-size: .9em; } }
   @media screen and (max-width: 480px) {
     p {
-      font-size: .8em; } }
+      font-size: .9em; } }
   p.tagline {
     font-style: italic;
     font-weight: 500;
@@ -2586,12 +2586,12 @@ section.behandeling.content {
     display: table; }
   section.behandeling.content:after {
     clear: both; }
-  @media screen and (max-width: 480px) {
-    section.behandeling.content {
-      margin-top: 0px; } }
   @media screen and (max-width: 768px) {
     section.behandeling.content {
       margin-top: 2.5em; } }
+  @media screen and (max-width: 480px) {
+    section.behandeling.content {
+      margin-top: 0px; } }
   section.behandeling.content article {
     float: left;
     display: block;
@@ -2618,16 +2618,6 @@ section.behandeling.content {
       padding-left: 1.125em; }
     section.behandeling.content article li {
       padding-left: 0.3125em; }
-  section.behandeling.content aside {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 31.91489%;
-    margin-left: 8.51064%;
-    margin-left: 2.1875em;
-    padding: 1em; }
-    section.behandeling.content aside:last-child {
-      margin-right: 0; }
 
 section.behandelingen.content {
   *zoom: 1;
@@ -2652,10 +2642,12 @@ section.behandelingen.content {
         margin-left: 1.5em;
         margin-bottom: 0px; } }
   @media screen and (max-width: 480px) {
-    section.behandelingen.content h1 {
-      margin-left: 1.2em; }
-    section.behandelingen.content h2 {
-      margin-left: 1.5em; } }
+    section.behandelingen.content {
+      margin-top: 0px; }
+      section.behandelingen.content h1 {
+        margin-left: 1.2em; }
+      section.behandelingen.content h2 {
+        margin-left: 1.5em; } }
   section.behandelingen.content div.behandelingen {
     float: left;
     display: block;

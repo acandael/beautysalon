@@ -21,6 +21,7 @@ section.behandelingen.content {
   }
   
   @include media($mobile) {
+    margin-top: 0px;
     
     h1 {
       margin-left: 1.2em;
@@ -70,6 +71,5 @@ section.behandelingen.content {
   }
   aside {
     @extend .afspraak;
-
   }
 }
