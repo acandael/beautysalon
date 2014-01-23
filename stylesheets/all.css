@@ -2752,12 +2752,6 @@ section.contact.content {
     margin-left: 17.02128%; }
     section.contact.content aside:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 480px) {
-      section.contact.content aside {
-        position: static;
-        padding: .5em 1.5em;
-        width: 100%;
-        margin-left: 0%; } }
     @media screen and (max-width: 768px) {
       section.contact.content aside {
         float: left;
@@ -2770,5 +2764,11 @@ section.contact.content {
           margin-right: 0; }
         section.contact.content aside p {
           font-size: 0.875em; } }
+    @media screen and (max-width: 480px) {
+      section.contact.content aside {
+        position: static;
+        padding: .5em 1.5em;
+        width: 100%;
+        margin-left: 0%; } }
     section.contact.content aside .graphic {
       color: #f3a9bb; }

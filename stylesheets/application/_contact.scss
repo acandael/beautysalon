@@ -61,14 +61,7 @@ section.contact.content {
   aside {
     @include span-columns(3);
     @include shift(2);
-
-    @include media($mobile) {
-        position: static;
-        padding: .5em 1.5em;
-        @include fill-parent;
-        @include shift(0);
-    }
-
+    
     @include media($tablet) {
       @include span-columns(3);
       @include shift(0);
@@ -77,6 +70,13 @@ section.contact.content {
       p {
         font-size: em(14);
       }
+    }
+
+    @include media($mobile) {
+        position: static;
+        padding: .5em 1.5em;
+        @include fill-parent;
+        @include shift(0);
     }
 
 
