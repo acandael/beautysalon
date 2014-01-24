@@ -2698,6 +2698,9 @@ section.environ.content {
     display: table; }
   section.environ.content:after {
     clear: both; }
+  @media screen and (max-width: 480px) {
+    section.environ.content {
+      margin-top: 1.25em; } }
   section.environ.content article {
     float: left;
     display: block;
@@ -2705,6 +2708,11 @@ section.environ.content {
     width: 57.44681%; }
     section.environ.content article:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      section.environ.content article {
+        position: static;
+        width: 100%;
+        padding: .5em 1.5em; } }
   section.environ.content div.logo {
     float: left;
     display: block;
@@ -2712,6 +2720,11 @@ section.environ.content {
     width: 40.42553%; }
     section.environ.content div.logo:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      section.environ.content div.logo {
+        position: static;
+        width: 100%;
+        text-align: center; } }
 
 section.contact.content {
   *zoom: 1;

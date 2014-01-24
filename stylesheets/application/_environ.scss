@@ -1,12 +1,29 @@
 section.environ.content {
   @include outer-container;
   margin-top: em(100);
+
+  @include media($mobile){
+      margin-top: em(20); 
+  }
   
   article {
     @include span-columns(7);
+
+    @include media($mobile) {
+      position: static;
+      @include fill-parent;
+      padding: .5em 1.5em;
+
+    }
   }
 
   div.logo {
     @include span-columns(5);
+
+    @include media($mobile) {
+      position: static;
+      @include fill-parent;
+      text-align: center;
+    }
   }
 }
