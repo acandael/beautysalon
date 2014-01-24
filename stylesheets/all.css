@@ -2687,6 +2687,32 @@ section.behandelingen.content {
           section.behandelingen.content div.behandelingen article img {
             padding: 5px 0px; } }
 
+section.environ.content {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.25em; }
+  section.environ.content:before, section.environ.content:after {
+    content: " ";
+    display: table; }
+  section.environ.content:after {
+    clear: both; }
+  section.environ.content article {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 57.44681%; }
+    section.environ.content article:last-child {
+      margin-right: 0; }
+  section.environ.content div.logo {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 40.42553%; }
+    section.environ.content div.logo:last-child {
+      margin-right: 0; }
+
 section.contact.content {
   *zoom: 1;
   max-width: 68em;
