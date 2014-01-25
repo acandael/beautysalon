@@ -60,7 +60,7 @@ p {
 }
 
 a {
-  color: $pink;
+  color: darken($pink, 10);
 
   &:hover {
     color: $pink;

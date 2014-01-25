@@ -160,6 +160,11 @@ section.content {
     p {
       color: lighten($black, 10);
 
+      &.headline {
+       font-weight: 600;
+       color: darken($gray, 5);
+      }
+
       @include media($tablet) {
         font-size: .9em;
       }

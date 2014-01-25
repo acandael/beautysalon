@@ -628,7 +628,7 @@ p {
         font-size: 1.2em; } }
 
 a {
-  color: #f3a9bb; }
+  color: #ed7c98; }
   a:hover {
     color: #f3a9bb; }
 
@@ -2554,6 +2554,9 @@ section.content {
       height: auto; }
     section.content article.section p {
       color: #1c1c1c; }
+      section.content article.section p.headline {
+        font-weight: 600;
+        color: #8d8e8f; }
       @media screen and (max-width: 768px) {
         section.content article.section p {
           font-size: .9em; } }
