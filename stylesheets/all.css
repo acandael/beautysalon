@@ -2509,7 +2509,7 @@ section.content {
     padding: 0 1em;
     margin-top: 3.125em;
     margin-bottom: 0;
-    height: 250px; }
+    height: auto; }
     section.content article.section:before, section.content article.section:after {
       content: " ";
       display: table; }
@@ -2520,7 +2520,7 @@ section.content {
     @media screen and (max-width: 768px) {
       section.content article.section {
         margin-top: 0;
-        height: 200px; } }
+        height: auto; } }
     @media screen and (max-width: 480px) {
       section.content article.section {
         position: static;
@@ -2549,6 +2549,9 @@ section.content {
       section.content article.section h1 {
         font-size: .9em;
         margin-bottom: .2em; } }
+    section.content article.section img {
+      width: 60%;
+      height: auto; }
     section.content article.section p {
       color: #1c1c1c; }
       @media screen and (max-width: 768px) {

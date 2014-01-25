@@ -116,11 +116,11 @@ section.content {
 
     margin-top: em(50);
     margin-bottom: 0;
-    height: 250px;
+    height: auto;
 
     @include media($tablet) {
       margin-top: 0;
-      height: 200px;
+      height: auto;
     }
 
     @include media($mobile) {
@@ -150,6 +150,11 @@ section.content {
         font-size: .9em;
         margin-bottom: .2em;
       }
+    }
+
+    img {
+      width: 60%;
+      height: auto;
     }
 
     p {
