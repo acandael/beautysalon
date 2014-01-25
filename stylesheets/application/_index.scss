@@ -134,7 +134,7 @@ section.content {
 
     header {
       @include row();
-      margin-bottom: 2.0em;
+      //margin-bottom: 2.0em;
       text-align: center;
 
       @include media($mobile) {

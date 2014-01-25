@@ -2532,7 +2532,6 @@ section.content {
     section.content article.section header {
       *zoom: 1;
       display: block;
-      margin-bottom: 2.0em;
       text-align: center; }
       section.content article.section header:before, section.content article.section header:after {
         content: " ";
