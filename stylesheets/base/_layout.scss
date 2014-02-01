@@ -2,4 +2,9 @@ img {
   @include media($tablet) {
     width: 60%;
   }
+
+  &.polaroid {
+    padding: em(4);
+    border: 1px solid #ccc;
+  }
 }

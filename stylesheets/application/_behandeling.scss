@@ -22,7 +22,6 @@ section.behandeling.content {
       @include fill-parent;
     }
     img {
-      @include pad(20px 0px);
 
       @include media($tablet) {
         @include pad(5px 0px);

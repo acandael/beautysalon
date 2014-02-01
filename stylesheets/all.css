@@ -799,6 +799,9 @@ input[type="submit"] {
 @media screen and (max-width: 768px) {
   img {
     width: 60%; } }
+img.polaroid {
+  padding: 0.25em;
+  border: 1px solid #ccc; }
 
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2549,6 +2552,10 @@ section.content {
         font-size: .9em;
         margin-bottom: .2em; } }
     section.content article.section img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1.25em;
       width: 60%;
       height: auto; }
     section.content article.section p {
@@ -2612,11 +2619,9 @@ section.behandeling.content {
         margin-top: 1.25em;
         margin-bottom: 1.25em;
         width: 100%; } }
-    section.behandeling.content article img {
-      padding: 20px 0px; }
-      @media screen and (max-width: 768px) {
-        section.behandeling.content article img {
-          padding: 5px 0px; } }
+    @media screen and (max-width: 768px) {
+      section.behandeling.content article img {
+        padding: 5px 0px; } }
     section.behandeling.content article ul {
       padding: 0px 0px 20px 0px;
       list-style-image: url("../images/bullet.png");
@@ -2684,7 +2689,6 @@ section.behandelingen.content {
             margin-left: 0px;
             margin-bottom: 0.625em; } }
       section.behandelingen.content div.behandelingen article img {
-        padding: 0px 0px;
         margin-left: 1.25em;
         width: 40%;
         float: right; }
