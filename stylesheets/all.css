@@ -2676,7 +2676,8 @@ section.behandelingen.content {
       margin-top: 1.25em;
       margin-bottom: 1.25em;
       border-bottom: 2px solid #b4b4b5;
-      padding-bottom: 1.25em; }
+      padding-bottom: 1.25em;
+      overflow: hidden; }
       @media screen and (max-width: 480px) {
         section.behandelingen.content div.behandelingen article {
           position: static;

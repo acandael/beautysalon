@@ -45,6 +45,7 @@ section.behandelingen.content {
       margin-bottom: em(20);
       border-bottom: 2px solid lighten($gray, 10);
       padding-bottom: em(20);
+      overflow: hidden;
       @include media($mobile) {
         position: static;
         padding: .5em 1.5em;
