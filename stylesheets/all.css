@@ -2510,6 +2510,7 @@ section.content {
     margin-right: 2.12766%;
     width: 31.91489%;
     padding: 0 1em;
+    box-sizing: border-box;
     margin-top: 3.125em;
     margin-bottom: 0;
     height: auto; }

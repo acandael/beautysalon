@@ -113,7 +113,7 @@ section.content {
     @include outer-container;
     @include span-columns(4);
     @include pad(0 1em);
-
+    box-sizing: border-box;
     margin-top: em(50);
     margin-bottom: 0;
     height: auto;
