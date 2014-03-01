@@ -195,6 +195,7 @@ nav {
             @include fill-parent;
             border-bottom: 2px solid lighten($gray, 5);
             @include transition (background .3s ease-in-out);
+            width: 280px;
             &:hover {
               background: lighten($gray, 5);
             }
@@ -213,7 +214,7 @@ nav {
 
         @include media($tablet) {
           @include pad( default .3em);
-          font-size: 0.8em;
+          font-size: 0.9em;
           line-height: em(35);
         }
 

@@ -1,0 +1,57 @@
+section.behandelingencat.content {
+  @include outer-container;
+  margin-top: em(100);
+
+  @include media($tablet) {
+    margin-top: em(40);
+    h1 {
+      margin-left: 1.2em;
+    }
+    h2 {
+      margin-left: 1.5em;
+      margin-bottom: 0px;
+      //text-align: center;
+    }
+  }
+
+
+  @include media($mobile) {
+    margin-top: 0px;
+
+    h1 {
+      margin-left: 1.2em;
+    }
+    h2 {
+      margin-left: 1.5em;
+    }
+  }
+
+
+  div.behandelingen {
+    @include span-columns(7);
+    @include pad(0px 0px 0px 20px);
+    @include media($mobile) {
+      position: static;
+      padding: .5em 1.5em;
+      margin-bottom: em(20);
+      @include fill-parent;
+    }
+
+    article {
+      margin: 15px 0 20px 0;
+      border-bottom: 2px dotted $pink;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    ul {
+      li {
+        margin: 20px 0;
+      }
+    }
+  }
+  aside {
+    @extend .afspraak;
+  }
+}
