@@ -601,7 +601,9 @@ h1 {
       font-size: 1.2em; } }
 
 article h1 {
-  font-size: 1.2em; }
+  font-size: 1.5em;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #b4b4b5; }
 
 h2 {
   font-family: "Century Gothic", sans-serif;
