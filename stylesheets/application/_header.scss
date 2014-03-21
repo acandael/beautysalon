@@ -28,6 +28,9 @@ header.top-bar {
       height: 150px;
       max-width: 100%;
     }
+    h1 {
+      text-align: center;
+    }
 
     @include media($medium-screen) {
       img {
@@ -195,7 +198,7 @@ nav {
             @include fill-parent;
             border-bottom: 2px solid lighten($gray, 5);
             @include transition (background .3s ease-in-out);
-            width: 280px;
+            width: 265px;
             &:hover {
               background: lighten($gray, 5);
             }

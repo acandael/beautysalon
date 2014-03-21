@@ -118,6 +118,17 @@ section.content {
     margin-bottom: 0;
     height: auto;
 
+
+    h1 {
+      font-weight: 700;
+      padding-bottom: 15px;
+      border-bottom: 3px solid lighten($gray, 20);
+      @include media($mobile) {
+        border-bottom: none;
+      }
+
+    }
+
     @include media($tablet) {
       margin-top: 0;
       height: auto;

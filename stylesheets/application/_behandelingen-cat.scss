@@ -45,13 +45,21 @@ section.behandelingencat.content {
       }
     }
 
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: em(20);
+
+      @include media($tablet) {
+        @include pad(5px 0px);
+      }
+    }
+
+
     ul {
       li {
         margin: 20px 0;
       }
     }
-  }
-  aside {
-    @extend .afspraak;
   }
 }
