@@ -1,4 +1,4 @@
-section.behandelingencat.content {
+section.acties.content {
   @include outer-container;
   margin-top: em(100);
 
@@ -13,16 +13,13 @@ section.behandelingencat.content {
       //text-align: center;
     }
   }
-
-
   @include media($mobile) {
     margin-top: 0px;
-
     h1 {
-      margin-left: 1.2em;
+      margin-left: 0px;
     }
     h2 {
-      margin-left: 1.5em;
+      margin-left: 0px;
     }
   }
 
@@ -45,6 +42,10 @@ section.behandelingencat.content {
       &:last-child {
         border-bottom: none;
       }
+      .button {
+        @extend .pink-button;
+        float: left;
+      }
     }
 
     img {
@@ -63,13 +64,5 @@ section.behandelingencat.content {
         margin: 20px 0;
       }
     }
-
-    .button {
-      @extend .pink-button;
-      @include media($mobile) {
-        float: left;
-      }
-    }
-
   }
 }

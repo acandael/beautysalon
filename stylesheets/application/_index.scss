@@ -76,19 +76,19 @@ section.content {
           font-size: em(18);
         }
       }
-      &.more-info {
-
-      }
     }
 
-    p {
-      
-    }
     
     a {
       color: darken($gray, 10);
       float: right;
       font-weight: 600;
+      &.more-info {
+        margin-right: em(30);
+        @include pad(.4em);
+        font-weight: 700;
+        border-bottom: 3px solid transparent;
+      }
       &:hover {
         color: $pink;
       }
@@ -183,9 +183,7 @@ section.content {
       }
     }
 
-    
     a.more-info {
-      float: right;
       margin-right: em(30);
       @include pad(.4em);
       font-weight: 700;

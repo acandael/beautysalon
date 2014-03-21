@@ -42,5 +42,8 @@ section.behandeling.content {
   }
   .button {
     @extend .pink-button;
+    @include media($mobile) {
+      float: left;
+    }
   }
 }
