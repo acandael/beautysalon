@@ -242,10 +242,11 @@ nav {
            }
           }
         a {
-          color: $black;
+          color: $gray;
           @include pad(0.6em);
           border-bottom: 3px solid transparent;
           font-size: em(18);
+          font-weight: 700;
 
           @include media($mobile) {
             color: rgba(250, 250, 250, .9);
