@@ -1,6 +1,11 @@
 section.behandelingencat.content {
   @include outer-container;
-  margin-top: em(100);
+  margin-top: em(50);
+
+  > h1 {
+    text-align:center;
+    font-size: 2em;
+  }
 
   @include media($tablet) {
     margin-top: em(40);

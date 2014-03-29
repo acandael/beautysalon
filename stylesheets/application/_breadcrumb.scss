@@ -1,8 +1,8 @@
 .breadcrumb {
   @include outer-container;
-  @include shift(3);
-  @include clearfix;
-  margin-top: em(50);
+  @include shift(4);
+  margin-top: em(20);
+  padding-left: 7px;
   li {
     float: left;
     margin-right: 15px;

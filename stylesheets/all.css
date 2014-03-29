@@ -2247,14 +2247,9 @@ nav {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-left: 25.53191%;
-  *zoom: 1;
-  margin-top: 3.125em; }
-  .breadcrumb:before, .breadcrumb:after {
-    content: " ";
-    display: table; }
-  .breadcrumb:after {
-    clear: both; }
+  margin-left: 34.04255%;
+  margin-top: 1.25em;
+  padding-left: 7px; }
   .breadcrumb:before, .breadcrumb:after {
     content: " ";
     display: table; }
@@ -2647,12 +2642,15 @@ section.behandelingencat.content {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6.25em; }
+  margin-top: 3.125em; }
   section.behandelingencat.content:before, section.behandelingencat.content:after {
     content: " ";
     display: table; }
   section.behandelingencat.content:after {
     clear: both; }
+  section.behandelingencat.content > h1 {
+    text-align: center;
+    font-size: 2em; }
   @media screen and (max-width: 768px) {
     section.behandelingencat.content {
       margin-top: 2.5em; }
