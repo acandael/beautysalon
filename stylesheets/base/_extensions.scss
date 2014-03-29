@@ -13,7 +13,11 @@
       @include transition (color 0.3s ease); 
       &:hover {
         color: lighten($blue, 5);
-
+      }
+      @include media($mobile) {
+        @include fill-parent;
+        width: 100%;
+        text-align: center;
       }
     }
 

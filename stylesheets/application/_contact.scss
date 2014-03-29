@@ -44,6 +44,10 @@ section.contact.content {
     }
 
     form {
+      @include media($mobile) {
+        @include clearfix;
+        margin-bottom: em(20);
+      }
     textarea {
       height: 200px;
     }

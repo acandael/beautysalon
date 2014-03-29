@@ -1,6 +1,6 @@
 section.behandeling.content {
   @include outer-container;
-  margin-top: em(100);
+  margin-top: em(50);
 
   @include media($tablet) {
     margin-top: em(40);
@@ -11,7 +11,7 @@ section.behandeling.content {
   }
 
   article {
-    @include span-columns(7);
+    @include span-columns(12);
     @include pad(0px 0px 0px 20px);
 
     @include media($mobile) {
@@ -22,12 +22,17 @@ section.behandeling.content {
       @include fill-parent;
     }
     img {
-      display: block;
-      margin: 0 auto;
-      margin-bottom: em(20);
+      float: right;
+      margin-left: em(20);
 
       @include media($tablet) {
         @include pad(5px 0px);
+      }
+
+      @include media($mobile) {
+        display: block;
+        width: 100%;
+        margin-bottom: em(20);
       }
     }
     
@@ -42,8 +47,6 @@ section.behandeling.content {
   }
   .button {
     @extend .pink-button;
-    @include media($mobile) {
-      float: left;
-    }
+    float: left;
   }
 }

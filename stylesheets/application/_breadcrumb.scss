@@ -1,0 +1,15 @@
+.breadcrumb {
+  @include outer-container;
+  @include shift(3);
+  @include clearfix;
+  margin-top: em(50);
+  li {
+    float: left;
+    margin-right: 15px;
+    font-size: em(14);
+    &:not(:last-child):after{
+      content: ">>";
+      margin-left: 10px;
+    }
+  }
+}

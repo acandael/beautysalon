@@ -709,6 +709,11 @@ input[type="submit"] {
   transition: color 0.3s ease; }
   .pink-button:hover, section.behandeling.content .button:hover, section.behandelingencat.content div.behandelingen .button:hover, section.acties.content div.behandelingen article .button:hover, section.contact.content form input[type='submit']:hover {
     color: #85d7f7; }
+  @media screen and (max-width: 480px) {
+    .pink-button, section.behandeling.content .button, section.behandelingencat.content div.behandelingen .button, section.acties.content div.behandelingen article .button, section.contact.content form input[type='submit'] {
+      width: 100%;
+      width: 100%;
+      text-align: center; } }
 
 @media screen and (max-width: 768px) {
   img {
@@ -2046,7 +2051,7 @@ header.top-bar {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  height: 150px; }
+  height: 185px; }
   header.top-bar:before, header.top-bar:after {
     content: " ";
     display: table; }
@@ -2235,6 +2240,32 @@ nav {
           @media screen and (max-width: 480px) {
             nav ul li a:hover {
               border-bottom: none; } }
+
+.breadcrumb {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 25.53191%;
+  *zoom: 1;
+  margin-top: 3.125em; }
+  .breadcrumb:before, .breadcrumb:after {
+    content: " ";
+    display: table; }
+  .breadcrumb:after {
+    clear: both; }
+  .breadcrumb:before, .breadcrumb:after {
+    content: " ";
+    display: table; }
+  .breadcrumb:after {
+    clear: both; }
+  .breadcrumb li {
+    float: left;
+    margin-right: 15px;
+    font-size: 0.875em; }
+    .breadcrumb li:not(:last-child):after {
+      content: ">>";
+      margin-left: 10px; }
 
 div.footer-spacer {
   background: white;
@@ -2476,13 +2507,15 @@ section.content {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 1.25em;
-      width: 60%;
+      width: 100%;
       height: auto; }
     section.content article.section p {
       color: #1c1c1c; }
       section.content article.section p.headline {
-        font-weight: 600;
+        font-weight: 700;
         color: #8d8e8f; }
+        section.content article.section p.headline a:hover {
+          color: #6dcff6; }
       @media screen and (max-width: 768px) {
         section.content article.section p {
           font-size: 1em; } }
@@ -2505,13 +2538,17 @@ section.content {
       @media screen and (max-width: 480px) {
         section.content article.section ul {
           margin-bottom: 1.875em; } }
+      section.content article.section ul a {
+        font-weight: 700; }
+        section.content article.section ul a:hover {
+          color: #6dcff6; }
 
 section.behandeling.content {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6.25em; }
+  margin-top: 3.125em; }
   section.behandeling.content:before, section.behandeling.content:after {
     content: " ";
     display: table; }
@@ -2527,7 +2564,7 @@ section.behandeling.content {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 57.44681%;
+    width: 100%;
     padding: 0px 0px 0px 20px; }
     section.behandeling.content article:last-child {
       margin-right: 0; }
@@ -2539,21 +2576,24 @@ section.behandeling.content {
         margin-bottom: 1.25em;
         width: 100%; } }
     section.behandeling.content article img {
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 1.25em; }
+      float: right;
+      margin-left: 1.25em; }
       @media screen and (max-width: 768px) {
         section.behandeling.content article img {
           padding: 5px 0px; } }
+      @media screen and (max-width: 480px) {
+        section.behandeling.content article img {
+          display: block;
+          width: 100%;
+          margin-bottom: 1.25em; } }
     section.behandeling.content article ul {
       padding: 0px 0px 20px 0px;
       list-style-image: url("../images/bullet.png");
       padding-left: 1.125em; }
     section.behandeling.content article li {
       padding-left: 0.3125em; }
-  @media screen and (max-width: 480px) {
-    section.behandeling.content .button {
-      float: left; } }
+  section.behandeling.content .button {
+    float: left; }
 
 section.behandelingen.content {
   *zoom: 1;
@@ -2819,6 +2859,15 @@ section.contact.content {
       padding-top: 0.3125em; }
       section.contact.content article div.errorlist ul li {
         color: #ff0000; }
+  @media screen and (max-width: 480px) {
+    section.contact.content form {
+      *zoom: 1;
+      margin-bottom: 1.25em; }
+      section.contact.content form:before, section.contact.content form:after {
+        content: " ";
+        display: table; }
+      section.contact.content form:after {
+        clear: both; } }
   section.contact.content form textarea {
     height: 200px; }
   section.contact.content form div.honey {

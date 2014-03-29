@@ -1,8 +1,7 @@
 header.top-bar {
   @include outer-container;
   margin-top: 10px;
-  height: 150px;
-
+  height: 185px;
   @include media($medium-screen)
   {
     padding-left: em(20);
