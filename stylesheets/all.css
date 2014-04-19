@@ -592,13 +592,13 @@ h1 {
   color: #808283;
   font-size: 1.2em;
   font-weight: 600; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.2em; } }
   @media screen and (max-width: 480px) {
     h1 {
       font-size: 1.3125em;
       margin-bottom: 0; } }
-  @media screen and (max-width: 768px) {
-    h1 {
-      font-size: 1.2em; } }
 
 article h1 {
   font-size: 1.5em; }
@@ -635,6 +635,8 @@ a {
   a:hover {
     color: #f3a9bb; }
 
+ul.decorated {
+  list-style-image: url("../images/bullet.png"); }
 @media screen and (max-width: 768px) {
   ul li {
     font-size: 1em; } }
@@ -2050,6 +2052,7 @@ header.top-bar {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 1.25em 0px 0px;
   margin-top: 10px;
   height: 185px; }
   header.top-bar:before, header.top-bar:after {
@@ -2101,37 +2104,64 @@ header.top-bar {
           display: none; } }
   header.top-bar span.graphic {
     float: right;
+    color: #f3a9bb;
     margin-right: 2.1em;
-    color: #030303;
     font-size: 1.2em; }
     @media screen and (max-width: 768px) {
       header.top-bar span.graphic {
         margin-right: 1.2em; } }
-    header.top-bar span.graphic:hover {
-      color: #f3a9bb; }
-      @media screen and (max-width: 480px) {
-        header.top-bar span.graphic:hover {
-          color: white; } }
-    header.top-bar span.graphic a.phone {
-      color: #030303; }
-      header.top-bar span.graphic a.phone:hover {
-        color: #f3a9bb; }
-        @media screen and (max-width: 480px) {
-          header.top-bar span.graphic a.phone:hover {
-            color: white; } }
     @media screen and (max-width: 480px) {
-      header.top-bar span.graphic {
-        float: left;
-        margin-top: 0; }
-        header.top-bar span.graphic a.phone {
-          font-size: 0.75em; }
-        header.top-bar span.graphic i {
-          font-size: 0.75em; } }
+      header.top-bar span.graphic:hover {
+        color: white; } }
+    header.top-bar span.graphic a.phone:hover {
+      color: #6dcff6; }
     @media screen and (max-width: 768px) {
       header.top-bar span.graphic a.phone {
         font-size: 0.75em; }
       header.top-bar span.graphic i {
         font-size: 0.75em; } }
+    @media screen and (max-width: 480px) {
+      header.top-bar span.graphic {
+        float: left;
+        margin-top: 0; }
+        header.top-bar span.graphic a.phone {
+          font-size: 0.75em;
+          color: white; }
+        header.top-bar span.graphic i {
+          font-size: 0.75em;
+          color: white; } }
+  header.top-bar span.social {
+    float: right;
+    font-size: 1.2em; }
+    header.top-bar span.social i {
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      padding-top: 3px;
+      background: #f3a9bb;
+      color: #fff;
+      border-radius: 50px; }
+    header.top-bar span.social a:hover {
+      color: #6dcff6; }
+    @media screen and (max-width: 768px) {
+      header.top-bar span.social a {
+        font-size: 0.75em; }
+      header.top-bar span.social i {
+        font-size: 0.75em; } }
+    @media screen and (max-width: 480px) {
+      header.top-bar span.social {
+        float: left;
+        margin-top: 0;
+        margin-right: 0.625em; }
+        header.top-bar span.social a {
+          font-size: 0.75em;
+          color: white; }
+        header.top-bar span.social i {
+          width: 20px;
+          height: 20px;
+          font-size: 0.75em;
+          background: white;
+          color: #f3a9bb; } }
   header.top-bar i#nav-dropdown {
     display: none;
     float: right;
@@ -2165,82 +2195,106 @@ nav {
     @media screen and (max-width: 768px) {
       nav ul {
         margin: 30px 0 0 0; } }
-    nav ul li {
-      position: relative;
-      padding: 2.12766% 1.5em;
-      display: inline-block;
-      vertical-align: baseline;
-      zoom: 1;
-      *display: inline;
-      *vertical-align: auto;
-      line-height: 2.5em;
-      list-style-type: none;
-      text-align: center; }
-      @media screen and (min-width: new-breakpoint(min-width 47.5em 4)) {
-        nav ul li {
-          padding: 2.12766% 0.9em; } }
-      nav ul li:hover ul {
-        left: 0px; }
-      nav ul li.active a {
-        border-bottom: 3px solid #f3a9bb; }
-      nav ul li ul {
-        margin-top: 0px;
-        padding: 0;
-        position: absolute;
-        left: -9999px;
+  nav ul li {
+    position: relative;
+    padding: 2.12766% 1.5em;
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    line-height: 2.5em;
+    list-style-type: none;
+    text-align: center; }
+    @media screen and (min-width: new-breakpoint(min-width 47.5em 4)) {
+      nav ul li {
+        padding: 2.12766% 0.9em; } }
+    @media screen and (max-width: 480px) {
+      nav ul li.dropdown i {
+        float: right;
+        margin-right: 0.625em;
+        margin-top: 0.625em;
+        color: white; } }
+    nav ul li:hover ul {
+      left: 0px; }
+    @media screen and (max-width: 768px) {
+      nav ul li {
+        padding: 2.12766% 0.3em;
+        font-size: 0.9em;
+        line-height: 2.1875em; } }
+    @media screen and (max-width: 480px) {
+      nav ul li {
         background: #9a9b9c;
-        opacity: .9;
-        border-radius: 6px; }
-        nav ul li ul li {
-          width: 100%;
-          border-bottom: 2px solid #a7a8a9;
-          -webkit-transition: background 0.3s ease-in-out;
-          -moz-transition: background 0.3s ease-in-out;
-          transition: background 0.3s ease-in-out;
-          width: 265px; }
-          nav ul li ul li:hover {
-            background: #a7a8a9; }
-        nav ul li ul a {
-          color: white;
-          font-size: .9em; }
-          nav ul li ul a:hover {
-            border-bottom: none;
-            color: white; }
+        width: 100%;
+        padding-left: 0;
+        border-bottom: 1px solid #a7a8a9;
+        line-height: 2.1875em; }
+        nav ul li:hover {
+          opacity: .9; }
+        nav ul li.active {
+          border-bottom: none;
+          color: #f3a9bb;
+          opacity: .9; }
+          nav ul li.active a {
+            border-bottom: none; } }
+    nav ul li a {
+      color: #9a9b9c;
+      padding: 0.6em;
+      border-bottom: 3px solid transparent;
+      font-size: 1.125em;
+      font-weight: 700; }
       @media screen and (max-width: 768px) {
-        nav ul li {
-          padding: 2.12766% 0.3em;
-          font-size: 0.9em;
-          line-height: 2.1875em; } }
+        nav ul li a {
+          padding: 0.2em; } }
       @media screen and (max-width: 480px) {
-        nav ul li {
-          background: #9a9b9c;
-          width: 100%;
-          padding-left: 0;
-          border-bottom: 1px solid #a7a8a9;
-          line-height: 2.1875em; }
-          nav ul li:hover {
-            opacity: .9; }
-          nav ul li.active {
-            border-bottom: none;
-            color: #f3a9bb;
-            opacity: .9; }
-            nav ul li.active a {
-              border-bottom: none; } }
-      nav ul li a {
-        color: #9a9b9c;
-        padding: 0.6em;
-        border-bottom: 3px solid transparent;
-        font-size: 1.125em;
-        font-weight: 700; }
+        nav ul li a {
+          color: rgba(250, 250, 250, 0.9); } }
+      nav ul li a.active {
+        border-bottom: 3px solid #f3a9bb; }
         @media screen and (max-width: 480px) {
-          nav ul li a {
-            color: rgba(250, 250, 250, 0.9); } }
-        nav ul li a:hover {
-          border-bottom: 3px solid #f3a9bb;
-          color: #f3a9bb; }
-          @media screen and (max-width: 480px) {
-            nav ul li a:hover {
-              border-bottom: none; } }
+          nav ul li a.active {
+            border-bottom: none; } }
+      nav ul li a:hover {
+        border-bottom: 3px solid #f3a9bb;
+        color: #f3a9bb; }
+        @media screen and (max-width: 480px) {
+          nav ul li a:hover {
+            border-bottom: none; } }
+  nav ul ul {
+    margin-top: 0px;
+    padding: 0;
+    position: absolute;
+    left: -9999px;
+    background: #9a9b9c;
+    opacity: .9;
+    border-radius: 6px; }
+    @media screen and (max-width: 480px) {
+      nav ul ul {
+        left: 0; } }
+    nav ul ul a {
+      color: white;
+      font-size: .8em; }
+      nav ul ul a:hover {
+        border-bottom: none;
+        color: white; }
+      @media screen and (max-width: 480px) {
+        nav ul ul a {
+          font-size: 1em; } }
+  nav ul ul li {
+    width: 100%;
+    border-bottom: 2px solid #a7a8a9;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    width: 265px; }
+    nav ul ul li:hover {
+      background: #a7a8a9; }
+      @media screen and (max-width: 480px) {
+        nav ul ul li:hover {
+          background: none; } }
+    @media screen and (max-width: 480px) {
+      nav ul ul li:last-child {
+        border: none; } }
 
 .breadcrumb {
   *zoom: 1;
@@ -2262,6 +2316,9 @@ nav {
     .breadcrumb li:not(:last-child):after {
       content: ">>";
       margin-left: 10px; }
+  @media screen and (max-width: 480px) {
+    .breadcrumb {
+      display: none; } }
 
 div.footer-spacer {
   background: white;
@@ -2529,7 +2586,6 @@ section.content {
         section.content article.section a.more-info {
           margin-top: 1.25em; } }
     section.content article.section ul {
-      list-style-image: url("../images/bullet.png");
       padding-left: 1em; }
       @media screen and (max-width: 480px) {
         section.content article.section ul {
@@ -2651,21 +2707,15 @@ section.behandelingencat.content {
   section.behandelingencat.content > h1 {
     text-align: center;
     font-size: 2em; }
+    @media screen and (max-width: 480px) {
+      section.behandelingencat.content > h1 {
+        font-size: 1.5em; } }
   @media screen and (max-width: 768px) {
     section.behandelingencat.content {
       margin-top: 2.5em; }
-      section.behandelingencat.content h1 {
-        margin-left: 1.2em; }
       section.behandelingencat.content h2 {
         margin-left: 1.5em;
         margin-bottom: 0px; } }
-  @media screen and (max-width: 480px) {
-    section.behandelingencat.content {
-      margin-top: 0px; }
-      section.behandelingencat.content h1 {
-        margin-left: 1.2em; }
-      section.behandelingencat.content h2 {
-        margin-left: 1.5em; } }
   section.behandelingencat.content div.behandelingen {
     float: left;
     display: block;
@@ -2692,6 +2742,9 @@ section.behandelingencat.content {
         clear: both; }
       section.behandelingencat.content div.behandelingen article:last-child {
         border-bottom: none; }
+      @media screen and (max-width: 480px) {
+        section.behandelingencat.content div.behandelingen article h1 {
+          font-size: 1.2em; } }
     section.behandelingencat.content div.behandelingen img {
       display: block;
       margin: 0 auto;
@@ -2780,6 +2833,9 @@ section.environ.content {
     display: table; }
   section.environ.content:after {
     clear: both; }
+  @media screen and (max-width: 768px) {
+    section.environ.content {
+      margin-top: 2.5em; } }
   @media screen and (max-width: 480px) {
     section.environ.content {
       margin-top: 1.25em; } }
@@ -2787,7 +2843,8 @@ section.environ.content {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 57.44681%; }
+    width: 57.44681%;
+    padding: 0px 0px 0px 20px; }
     section.environ.content article:last-child {
       margin-right: 0; }
     @media screen and (max-width: 480px) {
@@ -2813,18 +2870,18 @@ section.contact.content {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6.25em; }
+  margin-top: 3.125em; }
   section.contact.content:before, section.contact.content:after {
     content: " ";
     display: table; }
   section.contact.content:after {
     clear: both; }
-  @media screen and (max-width: 480px) {
-    section.contact.content {
-      margin-top: 0px; } }
   @media screen and (max-width: 768px) {
     section.contact.content {
       margin-top: 2.5em; } }
+  @media screen and (max-width: 480px) {
+    section.contact.content {
+      margin-top: 0px; } }
   section.contact.content article {
     float: left;
     display: block;
@@ -2844,7 +2901,7 @@ section.contact.content {
     @media screen and (max-width: 480px) {
       section.contact.content article {
         position: static;
-        padding: .5em 1.5em;
+        padding: .5em .5em;
         margin-top: 1.25em;
         margin-bottom: 1.25em;
         border-bottom: 2px solid #e7e8e8;

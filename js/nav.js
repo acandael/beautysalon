@@ -8,4 +8,15 @@ $(document).ready(function() {
       }
     })
   });
+  if ( $(window).width() < 480) {
+    var dropdown = $('.dropdown');  
+    dropdown.prepend('<a class="show" href="#"><i class="fa fa-chevron-right"></i></a>');
+
+    $('.show').toggle(function() {
+      $(this).parent().find('.submenu').css("position", "relative");
+    },
+    function() {
+      $(this).parent().find('.submenu').css("position", "absolute");
+    });
+  }
 });

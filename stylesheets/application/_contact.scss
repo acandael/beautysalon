@@ -1,12 +1,13 @@
 section.contact.content {
   @include outer-container;
-  margin-top: em(100);
-  @include media($mobile) {
-    margin-top: 0px;
-  }
+  margin-top: em(50);
 
   @include media($tablet) {
     margin-top: em(40);
+  }
+
+  @include media($mobile) {
+    margin-top: 0px;
   }
 
     article {
@@ -19,7 +20,7 @@ section.contact.content {
 
       @include media($mobile) {
         position: static;
-        padding: .5em 1.5em;
+        padding: .5em .5em;
         margin-top: em(20);
         margin-bottom: em(20);
         border-bottom: 2px solid lighten($gray, 30);

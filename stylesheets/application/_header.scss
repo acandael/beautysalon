@@ -1,5 +1,6 @@
 header.top-bar {
   @include outer-container;
+  @include pad(0px em(20) 0px 0px);
   margin-top: 10px;
   height: 185px;
   @include media($medium-screen)
@@ -64,8 +65,8 @@ header.top-bar {
 
   span.graphic {
     float: right;
+    color: $pink;
     margin-right: 2.1em;
-    color: $black;
     font-size: 1.2em;
 
     @include media($tablet) {
@@ -73,7 +74,6 @@ header.top-bar {
     }
 
     &:hover {
-        color: $pink;
         @include media($mobile) {
           color: $white;
         }
@@ -82,26 +82,12 @@ header.top-bar {
     
 
     a.phone {
-      color: $black;
 
       &:hover {
-        color: $pink;
-        @include media($mobile) {
-          color: $white;
-        }
+        color: $blue;
       }
     }
-    @include media($mobile) {
-      float: left;
-      margin-top: 0;
-      a.phone {
-        font-size: em(12);
-      }
-      i {
-        font-size: em(12);
-      }
-    }
-
+    
     @include media($tablet) {
       a.phone {
         font-size: em(12);
@@ -109,6 +95,63 @@ header.top-bar {
 
       i {
         font-size: em(12);
+      }
+    }
+
+    @include media($mobile) {
+      float: left;
+      margin-top: 0;
+      a.phone {
+        font-size: em(12);
+        color: $white;
+      }
+      i {
+        font-size: em(12);
+        color: $white;
+      }
+    }
+
+  }
+
+  span.social {
+    float: right;
+    font-size: 1.2em;
+    i {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    padding-top: 3px;
+    background: $pink;
+    color: #fff;
+    border-radius: 50px;
+    }
+    a:hover {
+      color: $blue;
+    }
+
+    @include media($tablet) {
+      a {
+        font-size: em(12);
+      }
+
+      i {
+        font-size: em(12);
+      }
+    }
+    @include media($mobile) {
+      float: left;
+      margin-top: 0;
+      margin-right: em(10);
+      a {
+        font-size: em(12);
+        color: $white;
+      }
+      i {
+        width: 20px;
+        height: 20px;
+        font-size: em(12);
+        background: $white;
+        color: $pink;
       }
     }
   }
@@ -162,106 +205,138 @@ nav {
         margin: 30px 0 0 0;
       }
 
-      li {
-        position: relative;
-        @include pad( default 1.5em );
-        @include inline-block;
-        line-height: em(40);
-        list-style-type: none;
-        text-align: center;
 
-        @include media($medium-screen) {
-          @include pad( default .9em );
-        }
+    }
 
-        &:hover ul {
-          left: 0px;
-        }
+    
+    ul li {
+      position: relative;
+      @include pad( default 1.5em );
+      @include inline-block;
+      line-height: em(40);
+      list-style-type: none;
+      text-align: center;
 
+      @include media($medium-screen) {
+        @include pad( default .9em );
+      }
 
-        &.active a {
-            border-bottom: 3px solid $pink;
-            
-        }
-
-        ul {
-          margin-top: 0px;
-          padding: 0;
-          position: absolute;
-          left: -9999px;
-          background: $gray;
-          opacity: .9;
-          border-radius: 6px;
-
-          li {
-            @include fill-parent;
-            border-bottom: 2px solid lighten($gray, 5);
-            @include transition (background .3s ease-in-out);
-            width: 265px;
-            &:hover {
-              background: lighten($gray, 5);
-            }
-          }
-
-          
-          a {
-            color: $white;
-            font-size: .9em;
-            &:hover {
-              border-bottom: none;
-              color: $white;
-            }
-          }
-        }
-
-        @include media($tablet) {
-          @include pad( default .3em);
-          font-size: 0.9em;
-          line-height: em(35);
-        }
-
+      &.dropdown {
         @include media($mobile){
-          background: $gray;
-          @include fill-parent;
-          padding-left: 0;
-          border-bottom: 1px solid lighten($gray, 5);
-          line-height: em(35);
-
-          &:hover {
-            opacity: .9;
-          }
-
-          &.active {
-            border-bottom: none;
-            color: $pink;
-            opacity: .9;
-
-            a {
-              border-bottom: none;
-            }
-           }
-          }
-        a {
-          color: $gray;
-          @include pad(0.6em);
-          border-bottom: 3px solid transparent;
-          font-size: em(18);
-          font-weight: 700;
-
-          @include media($mobile) {
-            color: rgba(250, 250, 250, .9);
-            //color: $white;
-          }
-          &:hover {
-            border-bottom: 3px solid $pink;
-            color: $pink;
-
-            @include media($mobile) {
-              border-bottom: none;
-            }
+          i {
+            float: right;
+            margin-right: em(10);
+            margin-top: em(10);
+            color: $white;
           }
         }
       }
 
+      &:hover ul {
+        left: 0px;
+      }
+
+
+      @include media($tablet) {
+        @include pad( default .3em);
+        font-size: 0.9em;
+        line-height: em(35);
+      }
+
+      @include media($mobile){
+        background: $gray;
+        @include fill-parent;
+        padding-left: 0;
+        border-bottom: 1px solid lighten($gray, 5);
+        line-height: em(35);
+
+        &:hover {
+          opacity: .9;
+        }
+
+        &.active {
+          border-bottom: none;
+          color: $pink;
+          opacity: .9;
+
+          a {
+            border-bottom: none;
+          }
+         }
+        }
+      a {
+        color: $gray;
+        @include pad(0.6em);
+        border-bottom: 3px solid transparent;
+        font-size: em(18);
+        font-weight: 700;
+
+        @include media($tablet) {
+          @include pad(0.2em);
+        }
+
+        @include media($mobile) {
+          color: rgba(250, 250, 250, .9);
+        }
+        &.active {
+          border-bottom: 3px solid $pink;
+          @include media($mobile) {
+            border-bottom: none;
+          }
+        }
+        &:hover {
+          border-bottom: 3px solid $pink;
+          color: $pink;
+
+          @include media($mobile) {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    ul ul {
+      margin-top: 0px;
+      padding: 0;
+      position: absolute;
+      left: -9999px;
+      background: $gray;
+      opacity: .9;
+      border-radius: 6px;
+      @include media($mobile) {
+        left: 0;
+      }
+      
+      a {
+        color: $white;
+        font-size: .8em;
+        &:hover {
+          border-bottom: none;
+          color: $white;
+        }
+        @include media($mobile) {
+          font-size: 1em;
+        }
+      }
+    }
+
+
+    ul ul li {
+      @include fill-parent;
+      border-bottom: 2px solid lighten($gray, 5);
+      @include transition (background .3s ease-in-out);
+      width: 265px;
+      &:hover {
+        background: lighten($gray, 5);
+        @include media($mobile) {
+          background: none;
+        }
+      }
+      &:last-child {
+        @include media($mobile) {
+          border: none;
+        }
+
+      }
     }
   }

@@ -12,4 +12,8 @@
       margin-left: 10px;
     }
   }
+
+  @include media($mobile){
+    display: none;
+  }
 }

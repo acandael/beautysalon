@@ -14,13 +14,12 @@ h1 {
   font-size: 1.2em;
   font-weight: 600;
 
+  @include media($tablet) {
+    font-size: 1.2em;
+  }
   @include media($mobile) {
     font-size: em(21);
     margin-bottom: 0;
-  }
-
-  @include media($tablet) {
-    font-size: 1.2em;
   }
 }
 
@@ -72,6 +71,9 @@ a {
 }
 
 ul {
+  &.decorated {
+     list-style-image:url('../images/bullet.png');
+  }
   li {
     @include media($tablet) {
       font-size: 1em;

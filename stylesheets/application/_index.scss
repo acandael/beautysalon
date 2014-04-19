@@ -204,7 +204,6 @@ section.content {
     }
     
     ul {
-      list-style-image:url('../images/bullet.png');
       padding-left: 1em;
       @include media($mobile) {
         margin-bottom: em(30);
