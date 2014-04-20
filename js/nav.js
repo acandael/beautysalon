@@ -14,9 +14,13 @@ $(document).ready(function() {
 
     $('.show').toggle(function() {
       $(this).parent().find('.submenu').css("position", "relative");
+      var icon = $(this).find('i');
+      icon.removeClass("fa fa-chevron-right").addClass("fa fa-chevron-down"); 
     },
     function() {
       $(this).parent().find('.submenu').css("position", "absolute");
+      var icon = $(this).find('i');
+      icon.removeClass("fa fa-chevron-down").addClass("fa fa-chevron-right"); 
     });
   }
 });

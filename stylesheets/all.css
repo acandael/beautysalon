@@ -2212,7 +2212,7 @@ nav {
     @media screen and (max-width: 480px) {
       nav ul li.dropdown i {
         float: right;
-        margin-right: 0.625em;
+        margin-right: 0.9375em;
         margin-top: 0.625em;
         color: white; } }
     nav ul li:hover ul {
@@ -2270,7 +2270,7 @@ nav {
     border-radius: 6px; }
     @media screen and (max-width: 480px) {
       nav ul ul {
-        left: 0; } }
+        left: 0px; } }
     nav ul ul a {
       color: white;
       font-size: .8em; }

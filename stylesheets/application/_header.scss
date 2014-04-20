@@ -225,7 +225,7 @@ nav {
         @include media($mobile){
           i {
             float: right;
-            margin-right: em(10);
+            margin-right: em(15);
             margin-top: em(10);
             color: $white;
           }
@@ -303,8 +303,9 @@ nav {
       background: $gray;
       opacity: .9;
       border-radius: 6px;
+
       @include media($mobile) {
-        left: 0;
+        left: 0px;
       }
       
       a {
