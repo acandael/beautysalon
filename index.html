@@ -42,7 +42,7 @@
           </span>           
           <i id="nav-dropdown" class="fa fa-bars"></i>
           <nav>
-            <ul>
+            <ul class="nav">
               <li>
                 <a href="#">HOME</a>
               </li>
@@ -141,8 +141,7 @@
                 </ul>
             </section>
           </footer>
-
-        <script > 
+        <script> 
           $(document).ready(function(){
             $('.bxslider').bxSlider({
               auto: true,
@@ -150,6 +149,60 @@
               autoStart: true,
               adaptiveHeight: true
               });
+
+            var menuActive = false,
+            touched = false,
+            $nav = $('.nav');
+            
+            function removeActive(callback){
+                $nav.find('.MenuActive').removeClass('MenuActive');
+                callback();
+            }
+            
+            function newActive($this,menu){
+                removeActive(function(){
+                    $this.next().addClass('MenuActive').queue(function(){
+                        if(menu){
+                            menuActive = true;
+                            touched = false;
+                        } else {
+                            touched = true;
+                        }
+                    }).dequeue();
+                });   
+            }
+
+            $nav.on({
+                touchstart:function(e){
+                    e.stopPropagation();
+                    newActive($(this),touched);
+                },
+                mouseenter:function(){
+                    newActive($(this),true);  
+                },
+                click:function(e){
+                    e.preventDefault();
+
+                    if(menuActive){
+                        $(this).trigger('trueClick',e.target);
+                    }
+                },
+                trueClick:function(e,$target){
+                    $(this).parents('.nav').trigger('mouseleave');
+                    window.location.href = $target;
+                }
+            },'li .has_children').on('mouseleave',function(){
+                removeActive(function(){
+                    menuActive = false;  
+                });
+            });
+
+            $('html').on('touchstart',function(e){
+                if(menuActive){
+                    $nav.trigger('mouseleave');
+                }
+            });
+
           });
         </script>
     </body>
