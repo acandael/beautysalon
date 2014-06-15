@@ -1,12 +1,8 @@
 header.top-bar {
   @include outer-container;
-  @include pad(0px em(20) 0px 0px);
-  margin-top: 10px;
+  @include pad(0px em(10) 0px em(10));
+  margin-top: em(20);
   height: 185px;
-  @include media($medium-screen)
-  {
-    padding-left: em(20);
-  }
 
   @include media($mobile) {
     position: static;
@@ -211,7 +207,7 @@ nav {
     
     ul li {
       position: relative;
-      @include pad( default 1.5em );
+      @include pad( default 1em );
       @include inline-block;
       line-height: em(40);
       list-style-type: none;
@@ -225,9 +221,10 @@ nav {
         @include media($mobile){
           i {
             float: right;
-            margin-right: em(15);
-            margin-top: em(10);
+            margin-right: em(25);
+            margin-top: em(22);
             color: $white;
+            font-size: 16px;
           }
         }
       }
@@ -246,9 +243,9 @@ nav {
       @include media($mobile){
         background: $gray;
         @include fill-parent;
-        padding-left: 0;
+        padding: 0;
         border-bottom: 1px solid lighten($gray, 5);
-        line-height: em(35);
+        line-height: em(60);
 
         &:hover {
           opacity: .9;
@@ -273,6 +270,7 @@ nav {
 
         @include media($tablet) {
           @include pad(0.2em);
+          font-size: 1em;
         }
 
         @include media($mobile) {
@@ -324,9 +322,9 @@ nav {
 
     ul ul li {
       @include fill-parent;
-      border-bottom: 2px solid lighten($gray, 5);
+      padding: 0;
+      border-bottom: 1px solid lighten($gray, 5);
       @include transition (background .3s ease-in-out);
-      width: 265px;
       &:hover {
         background: lighten($gray, 5);
         @include media($mobile) {

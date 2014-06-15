@@ -8,3 +8,30 @@ img {
     border: 1px solid #ccc;
   }
 }
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+
+  position: relative;
+
+  @include media($tablet) {
+    margin-left: em(10);
+    margin-right: em(10);
+  }
+
+  @include media($medium-screen) {
+    margin-left: em(10);
+    margin-right: em(10);
+  }
+  
+
+  section{
+    @include outer-container;
+  }
+}
+
